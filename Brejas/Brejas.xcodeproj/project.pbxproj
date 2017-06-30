@@ -21,6 +21,18 @@
 		7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 		7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 		7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
+		7B5222ED1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
+		7B5222EE1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
+		7B5222EF1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
+		7BC169AD1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
+		7BC169AE1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
+		7BC169AF1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
+		7BC169B11F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
+		7BC169B21F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
+		7BC169B31F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
+		7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
+		7BC169B71F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
+		7BC169B81F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
 		DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */; };
 		DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +73,10 @@
 		7B5222D21F067DC800F35368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5222E01F0680B200F35368 /* BrejaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejaViewController.swift; sourceTree = "<group>"; };
 		7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejasScreensBuilder.swift; sourceTree = "<group>"; };
+		7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodingProtocol.swift; sourceTree = "<group>"; };
+		7BC169AC1F0693DB00E682DC /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		7BC169B01F069A0B00E682DC /* BeerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		7BC169B51F069E2000E682DC /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +144,8 @@
 		7B5222AF1F067DC700F35368 /* Brejas */ = {
 			isa = PBXGroup;
 			children = (
+				7BC169AB1F0693C000E682DC /* API */,
+				7B5222EB1F068A5400F35368 /* Utils */,
 				7B5222E51F06811000F35368 /* Resource */,
 				7B5222E41F06810000F35368 /* App */,
 				7B5222DE1F06806D00F35368 /* Brejas */,
@@ -192,6 +210,32 @@
 			isa = PBXGroup;
 			children = (
 				7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */,
+				7BC169B01F069A0B00E682DC /* BeerModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B5222EB1F068A5400F35368 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7BC169AB1F0693C000E682DC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7BC169B41F069E0F00E682DC /* Model */,
+				7BC169AC1F0693DB00E682DC /* ApiClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		7BC169B41F069E0F00E682DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BC169B51F069E2000E682DC /* ErrorResult.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -378,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		129DA9ECCF5DED41267FDCA0 /* [CP] Check Pods Manifest.lock */ = {
@@ -438,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67F879CD1A841B5F04322712 /* [CP] Embed Pods Frameworks */ = {
@@ -468,7 +512,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE41FF264F656D512D811F96 /* [CP] Check Pods Manifest.lock */ = {
@@ -498,7 +542,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,9 +552,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5222ED1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
 				7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */,
 				7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */,
 				7B5222E11F0680B200F35368 /* BrejaViewController.swift in Sources */,
+				7BC169AD1F0693DB00E682DC /* ApiClient.swift in Sources */,
+				7BC169B11F069A0B00E682DC /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,9 +566,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5222EE1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
 				7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */,
 				7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7BC169B71F069E2000E682DC /* ErrorResult.swift in Sources */,
 				7B5222E21F0680B800F35368 /* BrejaViewController.swift in Sources */,
+				7BC169AE1F0693DB00E682DC /* ApiClient.swift in Sources */,
+				7BC169B21F069A0B00E682DC /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,9 +580,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5222EF1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
 				7B5222D11F067DC800F35368 /* BrejasUITests.swift in Sources */,
 				7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7BC169B81F069E2000E682DC /* ErrorResult.swift in Sources */,
 				7B5222E31F0680B800F35368 /* BrejaViewController.swift in Sources */,
+				7BC169AF1F0693DB00E682DC /* ApiClient.swift in Sources */,
+				7BC169B31F069A0B00E682DC /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +740,7 @@
 		};
 		7B5222D91F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */;
+			baseConfigurationReference = AF17E01AC2BB6F7CE463E8C4 /* Pods-BrejasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,7 +756,7 @@
 		};
 		7B5222DA1F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */;
+			baseConfigurationReference = F8D99203AA913ADF3FBB2D22 /* Pods-BrejasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -716,7 +772,7 @@
 		};
 		7B5222DC1F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */;
+			baseConfigurationReference = 12D90C04A1F7D7E69BFE560F /* Pods-BrejasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
@@ -731,7 +787,7 @@
 		};
 		7B5222DD1F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85DA46CA2B287CA70729AC04 /* Pods-Brejas-BrejasUITests.release.xcconfig */;
+			baseConfigurationReference = 29B22244B17A83CB11C5A638 /* Pods-BrejasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
@@ -763,6 +819,7 @@
 				7B5222D71F067DC800F35368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B5222D81F067DC800F35368 /* Build configuration list for PBXNativeTarget "BrejasTests" */ = {
 			isa = XCConfigurationList;
@@ -771,6 +828,7 @@
 				7B5222DA1F067DC800F35368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B5222DB1F067DC800F35368 /* Build configuration list for PBXNativeTarget "BrejasUITests" */ = {
 			isa = XCConfigurationList;
@@ -779,6 +837,7 @@
 				7B5222DD1F067DC800F35368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

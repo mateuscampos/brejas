@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Brejas_BrejasTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Brejas_BrejasTestsVersionString[];
+FOUNDATION_EXPORT double Pods_BrejasTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_BrejasTestsVersionString[];
 
