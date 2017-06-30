@@ -1,0 +1,6 @@
+framework module Pods_Brejas_BrejasTests {
+  umbrella header "Pods-Brejas-BrejasTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

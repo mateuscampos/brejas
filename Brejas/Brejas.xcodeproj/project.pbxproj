@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0336FBFAA60BBB4F7CAD4457 /* Pods_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */; };
+		5DE852AB1A39F341FFCEAEE9 /* Pods_BrejasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */; };
+		645D12F2F6A1198E85EB498D /* Pods_Brejas_BrejasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */; };
 		7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222B01F067DC700F35368 /* AppDelegate.swift */; };
 		7B5222B81F067DC700F35368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B71F067DC700F35368 /* Assets.xcassets */; };
 		7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */; };
@@ -18,6 +21,8 @@
 		7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 		7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 		7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
+		DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */; };
+		DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12D90C04A1F7D7E69BFE560F /* Pods-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29B22244B17A83CB11C5A638 /* Pods-BrejasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrejasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas_BrejasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7406B7A71CDE58D7B3FC344E /* Pods-Brejas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas/Pods-Brejas.release.xcconfig"; sourceTree = "<group>"; };
 		7B5222AD1F067DC700F35368 /* Brejas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brejas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222B01F067DC700F35368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B5222B71F067DC700F35368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +61,16 @@
 		7B5222D21F067DC800F35368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B5222E01F0680B200F35368 /* BrejaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejaViewController.swift; sourceTree = "<group>"; };
 		7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejasScreensBuilder.swift; sourceTree = "<group>"; };
+		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		85DA46CA2B287CA70729AC04 /* Pods-Brejas-BrejasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas_BrejasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17E01AC2BB6F7CE463E8C4 /* Pods-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrejasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7ADEF15CE3F8AF4721D318 /* Pods-Brejas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas/Pods-Brejas.debug.xcconfig"; sourceTree = "<group>"; };
+		F8D99203AA913ADF3FBB2D22 /* Pods-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE852AB1A39F341FFCEAEE9 /* Pods_BrejasTests.framework in Frameworks */,
+				645D12F2F6A1198E85EB498D /* Pods_Brejas_BrejasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0336FBFAA60BBB4F7CAD4457 /* Pods_BrejasUITests.framework in Frameworks */,
+				DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +110,8 @@
 				7B5222C41F067DC800F35368 /* BrejasTests */,
 				7B5222CF1F067DC800F35368 /* BrejasUITests */,
 				7B5222AE1F067DC700F35368 /* Products */,
+				DA036E54279008067D272E33 /* Pods */,
+				EBEEC23B8B1F90BFD94DB781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +196,35 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		DA036E54279008067D272E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA7ADEF15CE3F8AF4721D318 /* Pods-Brejas.debug.xcconfig */,
+				7406B7A71CDE58D7B3FC344E /* Pods-Brejas.release.xcconfig */,
+				AF17E01AC2BB6F7CE463E8C4 /* Pods-BrejasTests.debug.xcconfig */,
+				F8D99203AA913ADF3FBB2D22 /* Pods-BrejasTests.release.xcconfig */,
+				12D90C04A1F7D7E69BFE560F /* Pods-BrejasUITests.debug.xcconfig */,
+				29B22244B17A83CB11C5A638 /* Pods-BrejasUITests.release.xcconfig */,
+				7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */,
+				7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */,
+				7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */,
+				85DA46CA2B287CA70729AC04 /* Pods-Brejas-BrejasUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBEEC23B8B1F90BFD94DB781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */,
+				588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */,
+				B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */,
+				A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */,
+				6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B5222D51F067DC800F35368 /* Build configuration list for PBXNativeTarget "Brejas" */;
 			buildPhases = (
+				AE41FF264F656D512D811F96 /* [CP] Check Pods Manifest.lock */,
 				7B5222A91F067DC700F35368 /* Sources */,
 				7B5222AA1F067DC700F35368 /* Frameworks */,
 				7B5222AB1F067DC700F35368 /* Resources */,
+				67F879CD1A841B5F04322712 /* [CP] Embed Pods Frameworks */,
+				30C369B5E6302B210A4E2FBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B5222D81F067DC800F35368 /* Build configuration list for PBXNativeTarget "BrejasTests" */;
 			buildPhases = (
+				129DA9ECCF5DED41267FDCA0 /* [CP] Check Pods Manifest.lock */,
 				7B5222BD1F067DC800F35368 /* Sources */,
 				7B5222BE1F067DC800F35368 /* Frameworks */,
 				7B5222BF1F067DC800F35368 /* Resources */,
+				49082028D3A7F95D4DFAE54B /* [CP] Embed Pods Frameworks */,
+				B6FFE5EC88FBE241E5349403 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B5222DB1F067DC800F35368 /* Build configuration list for PBXNativeTarget "BrejasUITests" */;
 			buildPhases = (
+				374E2FF33DE8FBE4352FB7AE /* [CP] Check Pods Manifest.lock */,
 				7B5222C81F067DC800F35368 /* Sources */,
 				7B5222C91F067DC800F35368 /* Frameworks */,
 				7B5222CA1F067DC800F35368 /* Resources */,
+				0997CFCE1636D8B739CD4A15 /* [CP] Embed Pods Frameworks */,
+				9A068BFEB482A4AE1384206A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +364,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0997CFCE1636D8B739CD4A15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		129DA9ECCF5DED41267FDCA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30C369B5E6302B210A4E2FBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas/Pods-Brejas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		374E2FF33DE8FBE4352FB7AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49082028D3A7F95D4DFAE54B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67F879CD1A841B5F04322712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas/Pods-Brejas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A068BFEB482A4AE1384206A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE41FF264F656D512D811F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6FFE5EC88FBE241E5349403 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B5222A91F067DC700F35368 /* Sources */ = {
@@ -453,6 +656,7 @@
 		};
 		7B5222D61F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7ADEF15CE3F8AF4721D318 /* Pods-Brejas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
@@ -466,6 +670,7 @@
 		};
 		7B5222D71F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7406B7A71CDE58D7B3FC344E /* Pods-Brejas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
@@ -479,6 +684,7 @@
 		};
 		7B5222D91F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +700,7 @@
 		};
 		7B5222DA1F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +716,7 @@
 		};
 		7B5222DC1F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
@@ -523,6 +731,7 @@
 		};
 		7B5222DD1F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DA46CA2B287CA70729AC04 /* Pods-Brejas-BrejasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
