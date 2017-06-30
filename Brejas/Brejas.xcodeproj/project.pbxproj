@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222B01F067DC700F35368 /* AppDelegate.swift */; };
-		7B5222B31F067DC700F35368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222B21F067DC700F35368 /* ViewController.swift */; };
-		7B5222B61F067DC700F35368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B41F067DC700F35368 /* Main.storyboard */; };
 		7B5222B81F067DC700F35368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B71F067DC700F35368 /* Assets.xcassets */; };
 		7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */; };
 		7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222C51F067DC800F35368 /* BrejasTests.swift */; };
 		7B5222D11F067DC800F35368 /* BrejasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222D01F067DC800F35368 /* BrejasUITests.swift */; };
+		7B5222E11F0680B200F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
+		7B5222E21F0680B800F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
+		7B5222E31F0680B800F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
+		7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
+		7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
+		7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,6 @@
 /* Begin PBXFileReference section */
 		7B5222AD1F067DC700F35368 /* Brejas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brejas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222B01F067DC700F35368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B5222B21F067DC700F35368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B5222B51F067DC700F35368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B5222B71F067DC700F35368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5222BA1F067DC700F35368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5222BC1F067DC700F35368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		7B5222CC1F067DC800F35368 /* BrejasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrejasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222D01F067DC800F35368 /* BrejasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrejasUITests.swift; sourceTree = "<group>"; };
 		7B5222D21F067DC800F35368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5222E01F0680B200F35368 /* BrejaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejaViewController.swift; sourceTree = "<group>"; };
+		7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejasScreensBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,9 @@
 		7B5222AF1F067DC700F35368 /* Brejas */ = {
 			isa = PBXGroup;
 			children = (
-				7B5222B01F067DC700F35368 /* AppDelegate.swift */,
-				7B5222B21F067DC700F35368 /* ViewController.swift */,
-				7B5222B41F067DC700F35368 /* Main.storyboard */,
-				7B5222B71F067DC700F35368 /* Assets.xcassets */,
-				7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */,
-				7B5222BC1F067DC700F35368 /* Info.plist */,
+				7B5222E51F06811000F35368 /* Resource */,
+				7B5222E41F06810000F35368 /* App */,
+				7B5222DE1F06806D00F35368 /* Brejas */,
 			);
 			path = Brejas;
 			sourceTree = "<group>";
@@ -123,6 +124,49 @@
 				7B5222D21F067DC800F35368 /* Info.plist */,
 			);
 			path = BrejasUITests;
+			sourceTree = "<group>";
+		};
+		7B5222DE1F06806D00F35368 /* Brejas */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222E61F0681A300F35368 /* Model */,
+				7B5222DF1F06808700F35368 /* Controller */,
+			);
+			name = Brejas;
+			sourceTree = "<group>";
+		};
+		7B5222DF1F06808700F35368 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222E01F0680B200F35368 /* BrejaViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B5222E41F06810000F35368 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222B01F067DC700F35368 /* AppDelegate.swift */,
+				7B5222BC1F067DC700F35368 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		7B5222E51F06811000F35368 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */,
+				7B5222B71F067DC700F35368 /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		7B5222E61F0681A300F35368 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +281,6 @@
 			files = (
 				7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */,
 				7B5222B81F067DC700F35368 /* Assets.xcassets in Resources */,
-				7B5222B61F067DC700F35368 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B5222B31F067DC700F35368 /* ViewController.swift in Sources */,
 				7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */,
+				7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7B5222E11F0680B200F35368 /* BrejaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */,
+				7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7B5222E21F0680B800F35368 /* BrejaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5222D11F067DC800F35368 /* BrejasUITests.swift in Sources */,
+				7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7B5222E31F0680B800F35368 /* BrejaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B5222B41F067DC700F35368 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B5222B51F067DC700F35368 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
