@@ -138,9 +138,9 @@
 				7B5222AF1F067DC700F35368 /* Brejas */,
 				7B5222C41F067DC800F35368 /* BrejasTests */,
 				7B5222CF1F067DC800F35368 /* BrejasUITests */,
-				7B5222AE1F067DC700F35368 /* Products */,
-				DA036E54279008067D272E33 /* Pods */,
 				EBEEC23B8B1F90BFD94DB781 /* Frameworks */,
+				DA036E54279008067D272E33 /* Pods */,
+				7B5222AE1F067DC700F35368 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,10 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				7BC169AB1F0693C000E682DC /* API */,
-				7B5222EB1F068A5400F35368 /* Utils */,
-				7B5222E51F06811000F35368 /* Resource */,
 				7B5222E41F06810000F35368 /* App */,
 				7B5222DE1F06806D00F35368 /* Beers */,
+				7B5222E51F06811000F35368 /* Resource */,
+				7B5222EB1F068A5400F35368 /* Utils */,
 			);
 			path = Brejas;
 			sourceTree = "<group>";
@@ -187,62 +187,62 @@
 		7B5222DE1F06806D00F35368 /* Beers */ = {
 			isa = PBXGroup;
 			children = (
-				7BC169B91F06B27500E682DC /* View */,
-				7B5222E61F0681A300F35368 /* Model */,
 				7B5222DF1F06808700F35368 /* Controller */,
+				7B5222E61F0681A300F35368 /* Model */,
+				7BC169B91F06B27500E682DC /* View */,
 			);
-			name = Beers;
+			path = Beers;
 			sourceTree = "<group>";
 		};
 		7B5222DF1F06808700F35368 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7BD402B51F093B73009C79E4 /* BeersListController.swift */,
 				7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */,
+				7BD402B51F093B73009C79E4 /* BeersListController.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7B5222E41F06810000F35368 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				7B5222B01F067DC700F35368 /* AppDelegate.swift */,
-				7B5222BC1F067DC700F35368 /* Info.plist */,
 				7BD402C11F0960E8009C79E4 /* Brejas-Bridging-Header.h */,
+				7B5222BC1F067DC700F35368 /* Info.plist */,
 			);
-			name = App;
+			path = App;
 			sourceTree = "<group>";
 		};
 		7B5222E51F06811000F35368 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */,
 				7B5222B71F067DC700F35368 /* Assets.xcassets */,
+				7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */,
 			);
-			name = Resource;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		7B5222E61F0681A300F35368 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7BC169B01F069A0B00E682DC /* BeerModel.swift */,
 				7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */,
+				7BC169B01F069A0B00E682DC /* BeerModel.swift */,
 				7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */,
 				7BD402BB1F094E12009C79E4 /* BeersScreenBuilder.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7B5222EB1F068A5400F35368 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
 				7BD402BD1F095AAB009C79E4 /* EnvironmentSetting.swift */,
-				7BD402C21F096E5F009C79E4 /* LoadingView.swift */,
-				7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */,
 				7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */,
+				7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */,
+				7BD402C21F096E5F009C79E4 /* LoadingView.swift */,
+				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7BC169AB1F0693C000E682DC /* API */ = {
@@ -251,7 +251,7 @@
 				7BC169B41F069E0F00E682DC /* Model */,
 				7BC169AC1F0693DB00E682DC /* ApiClient.swift */,
 			);
-			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
 		7BC169B41F069E0F00E682DC /* Model */ = {
@@ -259,17 +259,17 @@
 			children = (
 				7BC169B51F069E2000E682DC /* ErrorResult.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7BC169B91F06B27500E682DC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */,
 				7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */,
 				7BD402C91F097B83009C79E4 /* BeerDetailView.swift */,
+				7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		DA036E54279008067D272E33 /* Pods */ = {
@@ -646,6 +646,7 @@
 				7B5222BA1F067DC700F35368 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -699,7 +700,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/Brejas-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/App/Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -744,7 +745,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/Brejas-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/App/Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -757,7 +758,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
-				INFOPLIST_FILE = Brejas/Info.plist;
+				INFOPLIST_FILE = Brejas/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mateus-Campos.Brejas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -772,7 +773,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
-				INFOPLIST_FILE = Brejas/Info.plist;
+				INFOPLIST_FILE = Brejas/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mateus-Campos.Brejas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
