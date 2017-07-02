@@ -86,7 +86,6 @@
 		7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerCollectionViewCell.swift; sourceTree = "<group>"; };
 		7BD402BB1F094E12009C79E4 /* BeersScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersScreenBuilder.swift; sourceTree = "<group>"; };
 		7BD402BD1F095AAB009C79E4 /* EnvironmentSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentSetting.swift; sourceTree = "<group>"; };
-		7BD402C11F0960E8009C79E4 /* Brejas-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brejas-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BD402C21F096E5F009C79E4 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadingView+UIViewController.swift"; sourceTree = "<group>"; };
 		7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailController.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseMock.json; sourceTree = "<group>"; };
 		7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModelSpec.swift; sourceTree = "<group>"; };
+		7BE03A411F09B5A9009135AE /* Brejas-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brejas-Bridging-Header.h"; sourceTree = "<group>"; };
 		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +145,7 @@
 				EBEEC23B8B1F90BFD94DB781 /* Frameworks */,
 				DA036E54279008067D272E33 /* Pods */,
 				7B5222AE1F067DC700F35368 /* Products */,
+				7BE03A411F09B5A9009135AE /* Brejas-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,10 +174,10 @@
 		7B5222C41F067DC800F35368 /* BrejasTests */ = {
 			isa = PBXGroup;
 			children = (
+				7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */,
 				7B5222C51F067DC800F35368 /* BrejasTests.swift */,
 				7B5222C71F067DC800F35368 /* Info.plist */,
 				7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */,
-				7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */,
 			);
 			path = BrejasTests;
 			sourceTree = "<group>";
@@ -213,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				7B5222B01F067DC700F35368 /* AppDelegate.swift */,
-				7BD402C11F0960E8009C79E4 /* Brejas-Bridging-Header.h */,
 				7B5222BC1F067DC700F35368 /* Info.plist */,
 			);
 			path = App;
@@ -708,7 +708,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/App/Brejas-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -753,7 +753,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/App/Brejas-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
