@@ -10,22 +10,6 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-extension ApiClient {
-    
-    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Any?, success: Success, failure: Failure) {
-        
-        if let statusCode = response?.statusCode {
-            switch statusCode {
-            case 200...209:
-                success(data)
-            default:
-                failure(ErrorResult(errorNumber: statusCode, errorDescription: "Could not retrieve the beers"))
-            }
-        }
-    }
-    
-}
-
 enum Routes: String {
     
     case beer
@@ -48,7 +32,7 @@ class ApiClient {
     
     func beers(onPage page:Int, success: @escaping Success, failure: @escaping Failure) {
         
-        let url = "https://api.punkapi.com/v2/" + Routes.beer.beers(forPage: page)
+        let url = EnvironmentSetting().baseUrl! + Routes.beer.beers(forPage: page)
         
         Alamofire.request(url).responseJSON { (response) in
             
@@ -75,4 +59,21 @@ class ApiClient {
             }
         }
     }
+}
+
+
+extension ApiClient {
+    
+    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Any?, success: Success, failure: Failure) {
+        
+        if let statusCode = response?.statusCode {
+            switch statusCode {
+            case 200...209:
+                success(data)
+            default:
+                failure(ErrorResult(errorNumber: statusCode, errorDescription: "Could not retrieve the beers"))
+            }
+        }
+    }
+    
 }
