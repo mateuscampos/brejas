@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0336FBFAA60BBB4F7CAD4457 /* Pods_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */; };
-		5DE852AB1A39F341FFCEAEE9 /* Pods_BrejasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */; };
-		645D12F2F6A1198E85EB498D /* Pods_Brejas_BrejasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */; };
 		7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222B01F067DC700F35368 /* AppDelegate.swift */; };
 		7B5222B81F067DC700F35368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B71F067DC700F35368 /* Assets.xcassets */; };
 		7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */; };
@@ -37,8 +34,6 @@
 		7BD402CC1F09A86F009C79E4 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */; };
 		7BD402CE1F09AAF3009C79E4 /* ResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */; };
 		7BD402D01F09AC5E009C79E4 /* BeerModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */; };
-		DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */; };
-		DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +56,6 @@
 /* Begin PBXFileReference section */
 		12D90C04A1F7D7E69BFE560F /* Pods-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		29B22244B17A83CB11C5A638 /* Pods-BrejasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasUITests/Pods-BrejasUITests.release.xcconfig"; sourceTree = "<group>"; };
-		588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrejasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas_BrejasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7406B7A71CDE58D7B3FC344E /* Pods-Brejas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas/Pods-Brejas.release.xcconfig"; sourceTree = "<group>"; };
 		7B5222AD1F067DC700F35368 /* Brejas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brejas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222B01F067DC700F35368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,10 +91,7 @@
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		85DA46CA2B287CA70729AC04 /* Pods-Brejas-BrejasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas_BrejasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17E01AC2BB6F7CE463E8C4 /* Pods-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrejasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brejas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7ADEF15CE3F8AF4721D318 /* Pods-Brejas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas/Pods-Brejas.debug.xcconfig"; sourceTree = "<group>"; };
 		F8D99203AA913ADF3FBB2D22 /* Pods-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrejasTests/Pods-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE852AB1A39F341FFCEAEE9 /* Pods_BrejasTests.framework in Frameworks */,
-				645D12F2F6A1198E85EB498D /* Pods_Brejas_BrejasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0336FBFAA60BBB4F7CAD4457 /* Pods_BrejasUITests.framework in Frameworks */,
-				DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +283,6 @@
 		EBEEC23B8B1F90BFD94DB781 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */,
-				588AC0DBA413E744EB391C17 /* Pods_BrejasTests.framework */,
-				B3B8A9964DEA2CD42B57E465 /* Pods_BrejasUITests.framework */,
-				A2A5108D3E7899367DEDAC82 /* Pods_Brejas_BrejasTests.framework */,
-				6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
