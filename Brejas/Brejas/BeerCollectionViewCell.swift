@@ -23,6 +23,7 @@ class BeerCollectionViewCell: UICollectionViewCell, ViewCodingProtocol {
         imageView.backgroundColor = .white
         imageView.layer.cornerRadius = 3.0
         imageView.layer.masksToBounds = true
+        imageView.image = UIImage(named: "beer_placeholder")
         return imageView
     }()
     
@@ -78,9 +79,22 @@ class BeerCollectionViewCell: UICollectionViewCell, ViewCodingProtocol {
             self.alpha = 1
         }
         
-        self.loadImage(fromUrl: beer.beerImageUrl!)
-        self.beerName.text = beer.beerName
-        self.beerAbv.text = "ABV: \(NSString(format: "%.2f", beer.beerAbv!))"
+        if let url = beer.beerImageUrl {
+            self.loadImage(fromUrl: url)
+        }
+        
+        if let name = beer.beerName {
+            self.beerName.text = "Name: \(name)"
+        } else {
+            self.beerName.text = "Name: - "
+        }
+        
+        if let abv = beer.beerAbv {
+            self.beerAbv.text = "ABV: \(NSString(format: "%.2f", abv))"
+        } else {
+            self.beerAbv.text = "ABV: - "
+        }
+
     }
     
     func loadImage(fromUrl url: String) {

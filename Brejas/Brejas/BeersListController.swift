@@ -28,15 +28,21 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
     // MARK: - Action
     func updateScreen(withBeers beers: [BeerModel]) {
         
-        for beer in beers {
-            let indexPath = IndexPath(item: self.beers.count, section: 0)
-            self.beers.append(beer)
+        if self.beers.count == 0 {
+            self.beers = beers
             self.dataSourceDelegate?.beers = self.beers
-            self.collectionView.insertItems(at: [indexPath])
+            self.collectionView.reloadData()
+        } else {
+            for beer in beers {
+                let indexPath = IndexPath(item: self.beers.count, section: 0)
+                self.beers.append(beer)
+                self.dataSourceDelegate?.beers = self.beers
+                self.collectionView.insertItems(at: [indexPath])
+            }
         }
-
         self.collectionView.finishInfiniteScroll(completion: nil)
         self.refresher.endRefreshing()
+        
     }
     
     func refreshBeers() {
@@ -71,10 +77,14 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
         }
         
         ApiClient.sharedApliClient.beers(onPage: page, success: { (beers) in
+            
+            self.hideLoading()
+            
             if let list = beers as? [BeerModel] {
                 self.updateScreen(withBeers: list)
+            } else {
+                self.showErrorAlert(withMessage: "Ocorreu algum erro equanto preparávamos as cervejas para você! :(")
             }
-            self.hideLoading()
         }) { (error) in
             self.hideLoading()
             self.showErrorAlert(withMessage: "Não foi possível carregar a lista de cervejas! :(")

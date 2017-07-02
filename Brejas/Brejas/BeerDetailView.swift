@@ -38,6 +38,7 @@ class BeerDetailView: UIScrollView, ViewCodingProtocol {
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
+        imageView.image = UIImage(named: "beer_placeholder")
         return imageView
     }()
     
@@ -60,12 +61,41 @@ class BeerDetailView: UIScrollView, ViewCodingProtocol {
     // MARK: - Setup
     
     func setupInfo(forBeer beer: BeerModel) {
-        self.loadImage(fromUrl: beer.beerImageUrl!)
-        self.beerName.text = "Name: \(beer.beerName!)"
-        self.beerTagline.text = "Tagline: \(beer.beerTagline!)"
-        self.beerDescription.text = "Description: \(beer.beerDescription!)"
-        self.beerAbv.text = "ABV: \(NSString(format: "%.2f", beer.beerAbv!))"
-        self.beerIbu.text = "IBU: \(NSString(format: "%.2f", beer.beerIbu!))"
+        
+        if let url = beer.beerImageUrl {
+            self.loadImage(fromUrl: url)
+        }
+        
+        if let name = beer.beerName {
+            self.beerName.text = "Name: \(name)"
+        } else {
+            self.beerName.text = "Name: - "
+        }
+        
+        if let tag = beer.beerTagline {
+            self.beerTagline.text = "Tagline: \(tag)"
+        } else {
+            self.beerTagline.text = "Tagline: - "
+        }
+        
+        if let desc = beer.beerDescription {
+            self.beerDescription.text = "Description: \(desc)"
+        } else {
+            self.beerDescription.text = "Description: - "
+        }
+        
+        if let abv = beer.beerAbv {
+            self.beerAbv.text = "ABV: \(NSString(format: "%.2f", abv))"
+        }  else {
+            self.beerAbv.text = "ABV: - "
+        }
+        
+        if let ibu = beer.beerIbu {
+            self.beerIbu.text = "IBU: \(NSString(format: "%.2f", ibu))"
+        }  else {
+            self.beerIbu.text = "IBU: - "
+        }
+        
     }
     
     func loadImage(fromUrl url: String) {
