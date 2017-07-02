@@ -35,6 +35,8 @@
 		7BD402C81F0979D8009C79E4 /* BeerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */; };
 		7BD402CA1F097B83009C79E4 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C91F097B83009C79E4 /* BeerDetailView.swift */; };
 		7BD402CC1F09A86F009C79E4 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */; };
+		7BD402CE1F09AAF3009C79E4 /* ResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */; };
+		7BD402D01F09AC5E009C79E4 /* BeerModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */; };
 		DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */; };
 		DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,8 @@
 		7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailController.swift; sourceTree = "<group>"; };
 		7BD402C91F097B83009C79E4 /* BeerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 		7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseMock.json; sourceTree = "<group>"; };
+		7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModelSpec.swift; sourceTree = "<group>"; };
 		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 			children = (
 				7B5222C51F067DC800F35368 /* BrejasTests.swift */,
 				7B5222C71F067DC800F35368 /* Info.plist */,
+				7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */,
+				7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */,
 			);
 			path = BrejasTests;
 			sourceTree = "<group>";
@@ -429,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD402CE1F09AAF3009C79E4 /* ResponseMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD402D01F09AC5E009C79E4 /* BeerModelSpec.swift in Sources */,
 				7BC169C41F06B70600E682DC /* BeerListViewDelegate.swift in Sources */,
 				7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */,
 				7BC169B21F069A0B00E682DC /* BeerModel.swift in Sources */,
