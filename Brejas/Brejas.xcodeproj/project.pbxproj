@@ -15,24 +15,29 @@
 		7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */; };
 		7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222C51F067DC800F35368 /* BrejasTests.swift */; };
 		7B5222D11F067DC800F35368 /* BrejasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222D01F067DC800F35368 /* BrejasUITests.swift */; };
-		7B5222E11F0680B200F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
-		7B5222E21F0680B800F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
-		7B5222E31F0680B800F35368 /* BrejaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E01F0680B200F35368 /* BrejaViewController.swift */; };
-		7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
-		7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
-		7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */; };
 		7B5222ED1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
 		7B5222EE1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
 		7B5222EF1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */; };
 		7BC169AD1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
-		7BC169AE1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
-		7BC169AF1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
 		7BC169B11F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
 		7BC169B21F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
 		7BC169B31F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
 		7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
 		7BC169B71F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
 		7BC169B81F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
+		7BC169C31F06B70600E682DC /* BeerListViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */; };
+		7BC169C41F06B70600E682DC /* BeerListViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */; };
+		7BC169C51F06B70600E682DC /* BeerListViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */; };
+		7BD402B61F093B73009C79E4 /* BeersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B51F093B73009C79E4 /* BeersListController.swift */; };
+		7BD402B81F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */; };
+		7BD402BA1F0940B2009C79E4 /* BeerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */; };
+		7BD402BC1F094E12009C79E4 /* BeersScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402BB1F094E12009C79E4 /* BeersScreenBuilder.swift */; };
+		7BD402BE1F095AAB009C79E4 /* EnvironmentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402BD1F095AAB009C79E4 /* EnvironmentSetting.swift */; };
+		7BD402C31F096E5F009C79E4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C21F096E5F009C79E4 /* LoadingView.swift */; };
+		7BD402C51F096FFD009C79E4 /* LoadingView+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */; };
+		7BD402C61F0978B2009C79E4 /* BeersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */; };
+		7BD402C81F0979D8009C79E4 /* BeerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */; };
+		7BD402CA1F097B83009C79E4 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402C91F097B83009C79E4 /* BeerDetailView.swift */; };
 		DD5DB19EA53F97B725C32883 /* Pods_Brejas_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E9C16EBDA8CAB698AC582 /* Pods_Brejas_BrejasUITests.framework */; };
 		DEC8D3C30F5638F21CE492D0 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD48367A066B8FC5136A3E2 /* Pods_Brejas.framework */; };
 /* End PBXBuildFile section */
@@ -71,12 +76,22 @@
 		7B5222CC1F067DC800F35368 /* BrejasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrejasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222D01F067DC800F35368 /* BrejasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrejasUITests.swift; sourceTree = "<group>"; };
 		7B5222D21F067DC800F35368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B5222E01F0680B200F35368 /* BrejaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejaViewController.swift; sourceTree = "<group>"; };
-		7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrejasScreensBuilder.swift; sourceTree = "<group>"; };
 		7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCodingProtocol.swift; sourceTree = "<group>"; };
 		7BC169AC1F0693DB00E682DC /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		7BC169B01F069A0B00E682DC /* BeerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		7BC169B51F069E2000E682DC /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewDelegate.swift; sourceTree = "<group>"; };
+		7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersCollectionView.swift; sourceTree = "<group>"; };
+		7BD402B51F093B73009C79E4 /* BeersListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersListController.swift; sourceTree = "<group>"; };
+		7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersCollectionViewDataSourceDelegate.swift; sourceTree = "<group>"; };
+		7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7BD402BB1F094E12009C79E4 /* BeersScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersScreenBuilder.swift; sourceTree = "<group>"; };
+		7BD402BD1F095AAB009C79E4 /* EnvironmentSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentSetting.swift; sourceTree = "<group>"; };
+		7BD402C11F0960E8009C79E4 /* Brejas-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brejas-Bridging-Header.h"; sourceTree = "<group>"; };
+		7BD402C21F096E5F009C79E4 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoadingView+UIViewController.swift"; sourceTree = "<group>"; };
+		7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailController.swift; sourceTree = "<group>"; };
+		7BD402C91F097B83009C79E4 /* BeerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +163,7 @@
 				7B5222EB1F068A5400F35368 /* Utils */,
 				7B5222E51F06811000F35368 /* Resource */,
 				7B5222E41F06810000F35368 /* App */,
-				7B5222DE1F06806D00F35368 /* Brejas */,
+				7B5222DE1F06806D00F35368 /* Beers */,
 			);
 			path = Brejas;
 			sourceTree = "<group>";
@@ -171,19 +186,21 @@
 			path = BrejasUITests;
 			sourceTree = "<group>";
 		};
-		7B5222DE1F06806D00F35368 /* Brejas */ = {
+		7B5222DE1F06806D00F35368 /* Beers */ = {
 			isa = PBXGroup;
 			children = (
+				7BC169B91F06B27500E682DC /* View */,
 				7B5222E61F0681A300F35368 /* Model */,
 				7B5222DF1F06808700F35368 /* Controller */,
 			);
-			name = Brejas;
+			name = Beers;
 			sourceTree = "<group>";
 		};
 		7B5222DF1F06808700F35368 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7B5222E01F0680B200F35368 /* BrejaViewController.swift */,
+				7BD402B51F093B73009C79E4 /* BeersListController.swift */,
+				7BD402C71F0979D8009C79E4 /* BeerDetailController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -193,6 +210,7 @@
 			children = (
 				7B5222B01F067DC700F35368 /* AppDelegate.swift */,
 				7B5222BC1F067DC700F35368 /* Info.plist */,
+				7BD402C11F0960E8009C79E4 /* Brejas-Bridging-Header.h */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -209,8 +227,10 @@
 		7B5222E61F0681A300F35368 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7B5222E71F0681C500F35368 /* BrejasScreensBuilder.swift */,
 				7BC169B01F069A0B00E682DC /* BeerModel.swift */,
+				7BC169C21F06B70600E682DC /* BeerListViewDelegate.swift */,
+				7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */,
+				7BD402BB1F094E12009C79E4 /* BeersScreenBuilder.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -219,6 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
+				7BD402BD1F095AAB009C79E4 /* EnvironmentSetting.swift */,
+				7BD402C21F096E5F009C79E4 /* LoadingView.swift */,
+				7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -238,6 +261,16 @@
 				7BC169B51F069E2000E682DC /* ErrorResult.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC169B91F06B27500E682DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */,
+				7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */,
+				7BD402C91F097B83009C79E4 /* BeerDetailView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		DA036E54279008067D272E33 /* Pods */ = {
@@ -552,13 +585,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD402B81F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift in Sources */,
+				7BD402BA1F0940B2009C79E4 /* BeerCollectionViewCell.swift in Sources */,
 				7B5222ED1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
+				7BD402C31F096E5F009C79E4 /* LoadingView.swift in Sources */,
+				7BC169C31F06B70600E682DC /* BeerListViewDelegate.swift in Sources */,
 				7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */,
-				7B5222E81F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
+				7BD402C61F0978B2009C79E4 /* BeersCollectionView.swift in Sources */,
+				7BD402BE1F095AAB009C79E4 /* EnvironmentSetting.swift in Sources */,
 				7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */,
-				7B5222E11F0680B200F35368 /* BrejaViewController.swift in Sources */,
+				7BD402B61F093B73009C79E4 /* BeersListController.swift in Sources */,
+				7BD402C51F096FFD009C79E4 /* LoadingView+UIViewController.swift in Sources */,
+				7BD402CA1F097B83009C79E4 /* BeerDetailView.swift in Sources */,
 				7BC169AD1F0693DB00E682DC /* ApiClient.swift in Sources */,
 				7BC169B11F069A0B00E682DC /* BeerModel.swift in Sources */,
+				7BD402C81F0979D8009C79E4 /* BeerDetailController.swift in Sources */,
+				7BD402BC1F094E12009C79E4 /* BeersScreenBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,11 +609,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5222EE1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
+				7BC169C41F06B70600E682DC /* BeerListViewDelegate.swift in Sources */,
 				7B5222C61F067DC800F35368 /* BrejasTests.swift in Sources */,
-				7B5222E91F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
 				7BC169B71F069E2000E682DC /* ErrorResult.swift in Sources */,
-				7B5222E21F0680B800F35368 /* BrejaViewController.swift in Sources */,
-				7BC169AE1F0693DB00E682DC /* ApiClient.swift in Sources */,
 				7BC169B21F069A0B00E682DC /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,11 +621,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5222EF1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
+				7BC169C51F06B70600E682DC /* BeerListViewDelegate.swift in Sources */,
 				7B5222D11F067DC800F35368 /* BrejasUITests.swift in Sources */,
-				7B5222EA1F0681C500F35368 /* BrejasScreensBuilder.swift in Sources */,
 				7BC169B81F069E2000E682DC /* ErrorResult.swift in Sources */,
-				7B5222E31F0680B800F35368 /* BrejaViewController.swift in Sources */,
-				7BC169AF1F0693DB00E682DC /* ApiClient.swift in Sources */,
 				7BC169B31F069A0B00E682DC /* BeerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,7 +658,9 @@
 		7B5222D31F067DC800F35368 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://api.punkapi.com/v2/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -663,6 +703,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -670,7 +711,9 @@
 		7B5222D41F067DC800F35368 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "https://api.punkapi.com/v2/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -705,6 +748,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Brejas/Brejas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -714,6 +758,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA7ADEF15CE3F8AF4721D318 /* Pods-Brejas.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = Brejas/Info.plist;
@@ -728,6 +773,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7406B7A71CDE58D7B3FC344E /* Pods-Brejas.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = Brejas/Info.plist;
@@ -742,7 +788,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF17E01AC2BB6F7CE463E8C4 /* Pods-BrejasTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = BrejasTests/Info.plist;
@@ -758,7 +804,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8D99203AA913ADF3FBB2D22 /* Pods-BrejasTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = BrejasTests/Info.plist;
@@ -774,7 +820,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12D90C04A1F7D7E69BFE560F /* Pods-BrejasUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = BrejasUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -789,7 +835,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29B22244B17A83CB11C5A638 /* Pods-BrejasUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 7H2AHWG667;
 				INFOPLIST_FILE = BrejasUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

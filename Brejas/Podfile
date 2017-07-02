@@ -8,6 +8,7 @@ use_frameworks!
     pod 'Alamofire'
     pod 'ObjectMapper'
     pod 'AlamofireImage'
+    pod 'UIScrollView-InfiniteScroll'
   end
 
   target 'Brejas' do
