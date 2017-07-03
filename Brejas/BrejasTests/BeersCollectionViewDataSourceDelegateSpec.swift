@@ -41,18 +41,17 @@ class BeersCollectionViewDataSourceDelegateSpec: QuickSpec {
         
         describe("the BeersCollectionViewDataSourceDelegate") {
             
-            let beers: [BeerModel] = []
+            var beers: [BeerModel] = []
             let dataSource: BeersCollectionViewDataSourceDelegate = BeersCollectionViewDataSourceDelegate()
             let mockDataSource = MockBeersCollectionViewDataSourceDelegate()
             let collectioView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
             
             beforeEach {
-//                let jsonData = JsonHelper.sharedInstance.jsonDataFromFile(BeersCollectionViewDataSourceDelegateSpec.self, name: "ResponseMock")
-//                let jsonString = String(data: jsonData, encoding: .utf8)
-//                let beers = Mapper<BeerModel>().mapArray(JSONString: jsonString!)!
-//                dataSource.beers = beers
+                let jsonData = JsonHelper.sharedInstance.jsonDataFromFile(BeersCollectionViewDataSourceDelegateSpec.self, name: "ResponseMock")
+                let jsonString = String(data: jsonData, encoding: .utf8)
+                beers = Mapper<BeerModel>().mapArray(JSONString: jsonString!)!
+                dataSource.beers = beers
                 mockDataSource.methodCalled = false
-                collectioView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
             }
             
             it("has to initialize") {
@@ -65,10 +64,6 @@ class BeersCollectionViewDataSourceDelegateSpec: QuickSpec {
             it("should return number of rows") {
                 let numberOfRows = beers.count
                 expect(dataSource.collectionView(collectioView, numberOfItemsInSection: 0)).to(equal(numberOfRows))
-            }
-            
-            it("should return a cell") {
-                //expect(dataSource.collectionView(collectioView, cellForItemAt: IndexPath(row: 0, section: 0))).to(beAnInstanceOf(BeerCollectionViewCell.self))
             }
             
             it("should trigger selection") {

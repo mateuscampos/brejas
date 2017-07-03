@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html>
 <head>
-<title>BeersScreenBuilder.swift - Slather</title>
+<title>UIViewController+ErrorAlert.swift - Slather</title>
 <link href="slather.css" media="all" rel="stylesheet">
 </head>
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "BeersScreenBuilder.swift" : </span><span class="cov_medium">81.25%</span>
+<span>Coverage for "UIViewController+ErrorAlert.swift" : </span><span class="cov_low">0.00%</span>
 </h2>
-<h4 class="cov_subtitle">(13 of 16 relevant lines covered)</h4>
-<h4 class="cov_filepath">Brejas/Beers/Model/BeersScreenBuilder.swift</h4>
+<h4 class="cov_subtitle">(0 of 12 relevant lines covered)</h4>
+<h4 class="cov_filepath">Brejas/Utils/UIViewController+ErrorAlert.swift</h4>
 <table class="source_code">
 <tr class="never">
 <td class="num">1</td>
@@ -19,7 +19,7 @@
 </tr>
 <tr class="never">
 <td class="num">2</td>
-<td class="src"><pre><code class="objc">//  BeersScreenBuilder.swift</code></pre></td>
+<td class="src"><pre><code class="objc">//  UIViewController+ErrorAlert.swift</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -34,7 +34,7 @@
 </tr>
 <tr class="never">
 <td class="num">5</td>
-<td class="src"><pre><code class="objc">//  Created by Mateus Campos on 02/07/17.</code></pre></td>
+<td class="src"><pre><code class="objc">//  Created by Mateus Campos on 03/07/17.</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -69,7 +69,7 @@
 </tr>
 <tr class="never">
 <td class="num">12</td>
-<td class="src"><pre><code class="objc">class BeersScreenBuilder {</code></pre></td>
+<td class="src"><pre><code class="objc">extension UIViewController {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
@@ -77,98 +77,73 @@
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">14</td>
-<td class="src"><pre><code class="objc">    static func beersListController() -&gt; UINavigationController {</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">15</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">16</td>
-<td class="src"><pre><code class="objc">        let navController: UINavigationController = UINavigationController()</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">17</td>
-<td class="src"><pre><code class="objc">        navController.viewControllers = [BeersListController()]</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">18</td>
-<td class="src"><pre><code class="objc">        return navController</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">19</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">20</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="never">
-<td class="num">21</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="covered">
-<td class="num">22</td>
-<td class="src"><pre><code class="objc">    static func beerDetailController(beer: BeerModel? = nil) -&gt; BeerDetailController {</code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">23</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">2x</td>
-</tr>
-<tr class="covered">
-<td class="num">24</td>
-<td class="src"><pre><code class="objc">        if let object = beer {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">25</td>
-<td class="src"><pre><code class="objc">            return BeerDetailController(beer: object)</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">26</td>
-<td class="src"><pre><code class="objc">        } else {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">27</td>
-<td class="src"><pre><code class="objc">            return BeerDetailController()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">    func showErrorAlert(withMessage message: String, tryAgain: @escaping () -&gt; ()?) {</code></pre></td>
+<td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">28</td>
+<td class="num">15</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">16</td>
+<td class="src"><pre><code class="objc">        let alertController: UIAlertController = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">17</td>
+<td class="src"><pre><code class="objc">        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">18</td>
+<td class="src"><pre><code class="objc">        let tryAgainAction: UIAlertAction = UIAlertAction(title: "Tentar Novamente", style: .default) { (action) in</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">19</td>
+<td class="src"><pre><code class="objc">            tryAgain()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">20</td>
 <td class="src"><pre><code class="objc">        }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">29</td>
+<td class="num">21</td>
+<td class="src"><pre><code class="objc">        alertController.addAction(cancelAction)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">22</td>
+<td class="src"><pre><code class="objc">        alertController.addAction(tryAgainAction)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">23</td>
+<td class="src"><pre><code class="objc">        self.present(alertController, animated: true, completion: nil)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">24</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">30</td>
+<td class="num">25</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">31</td>
+<td class="num">26</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">32</td>
+<td class="num">27</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>

@@ -7,9 +7,9 @@
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "BeersListController.swift" : </span><span class="cov_low">40.78%</span>
+<span>Coverage for "BeersListController.swift" : </span><span class="cov_low">57.58%</span>
 </h2>
-<h4 class="cov_subtitle">(42 of 103 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(57 of 99 relevant lines covered)</h4>
 <h4 class="cov_filepath">Brejas/Beers/Controller/BeersListController.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -110,37 +110,37 @@
 <tr class="covered">
 <td class="num">20</td>
 <td class="src"><pre><code class="objc">    override func viewDidLoad() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">21</td>
 <td class="src"><pre><code class="objc">        super.viewDidLoad()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">22</td>
 <td class="src"><pre><code class="objc">        self.setupViewConfiguration()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">23</td>
 <td class="src"><pre><code class="objc">        self.setupCollectionView()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">24</td>
 <td class="src"><pre><code class="objc">        self.loadBeers(page: self.page, loadingControl: true)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">25</td>
 <td class="src"><pre><code class="objc">        self.title = "Cervejas"</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">26</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
 <td class="num">27</td>
@@ -152,40 +152,40 @@
 <td class="src"><pre><code class="objc">    // MARK: - Action</code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">29</td>
 <td class="src"><pre><code class="objc">    func updateScreen(withBeers beers: [BeerModel]) {</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">30</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">31</td>
 <td class="src"><pre><code class="objc">        if self.beersList.count == 0 {</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">32</td>
 <td class="src"><pre><code class="objc">            self.beersList = beers</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">33</td>
 <td class="src"><pre><code class="objc">            self.dataSourceDelegate.beers = self.beersList</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">34</td>
 <td class="src"><pre><code class="objc">            self.collectionView.reloadData()</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">35</td>
 <td class="src"><pre><code class="objc">        } else {</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="missed">
 <td class="num">36</td>
@@ -217,30 +217,30 @@
 <td class="src"><pre><code class="objc">            }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">42</td>
 <td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">43</td>
 <td class="src"><pre><code class="objc">        self.collectionView.finishInfiniteScroll(completion: nil)</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">44</td>
 <td class="src"><pre><code class="objc">        self.refresher.endRefreshing()</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">45</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
-<tr class="missed">
+<tr class="covered">
 <td class="num">46</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">!</td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="never">
 <td class="num">47</td>
@@ -284,358 +284,358 @@
 </tr>
 <tr class="missed">
 <td class="num">55</td>
-<td class="src"><pre><code class="objc">    func showErrorAlert(withMessage message: String) {</code></pre></td>
+<td class="src"><pre><code class="objc">    func handleTryAgain() {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">56</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="src"><pre><code class="objc">        if self.page == 1 {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">57</td>
-<td class="src"><pre><code class="objc">        let alertController: UIAlertController = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)</code></pre></td>
+<td class="src"><pre><code class="objc">            self.loadBeers(page: self.page, loadingControl: true)</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">58</td>
-<td class="src"><pre><code class="objc">        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)</code></pre></td>
+<td class="src"><pre><code class="objc">        } else {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
 <td class="num">59</td>
-<td class="src"><pre><code class="objc">        let tryAgainAction: UIAlertAction = UIAlertAction(title: "Tentar Novamente", style: .default) { (action) in</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">60</td>
-<td class="src"><pre><code class="objc">            if self.page == 1 {</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">61</td>
-<td class="src"><pre><code class="objc">                self.loadBeers(page: self.page, loadingControl: true)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">62</td>
-<td class="src"><pre><code class="objc">            } else {</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">63</td>
-<td class="src"><pre><code class="objc">                self.loadBeers(page: self.page)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">64</td>
-<td class="src"><pre><code class="objc">            }</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">65</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">66</td>
-<td class="src"><pre><code class="objc">        alertController.addAction(cancelAction)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">67</td>
-<td class="src"><pre><code class="objc">        alertController.addAction(tryAgainAction)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">68</td>
-<td class="src"><pre><code class="objc">        self.present(alertController, animated: true, completion: nil)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">69</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">70</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="never">
-<td class="num">71</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">72</td>
-<td class="src"><pre><code class="objc">    // MARK: - Request</code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="covered">
-<td class="num">73</td>
-<td class="src"><pre><code class="objc">    func loadBeers(page: Int, loadingControl: Bool = false) {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">74</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">75</td>
-<td class="src"><pre><code class="objc">        if loadingControl {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">76</td>
-<td class="src"><pre><code class="objc">            self.showLoading()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">77</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">78</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="missed">
-<td class="num">79</td>
-<td class="src"><pre><code class="objc">        ApiClient.sharedApliClient.beers(onPage: page, success: { (beers) in</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">80</td>
-<td class="src"><pre><code class="objc">            </code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">81</td>
-<td class="src"><pre><code class="objc">            self.hideLoading()</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">82</td>
-<td class="src"><pre><code class="objc">            </code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">83</td>
-<td class="src"><pre><code class="objc">            if let list = beers as? [BeerModel] {</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">84</td>
-<td class="src"><pre><code class="objc">                self.updateScreen(withBeers: list)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">85</td>
-<td class="src"><pre><code class="objc">            } else {</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">86</td>
-<td class="src"><pre><code class="objc">                self.showErrorAlert(withMessage: "Ocorreu algum erro equanto prepar&aacute;vamos as cervejas para voc&ecirc;! :(")</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">87</td>
-<td class="src"><pre><code class="objc">            }</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">88</td>
-<td class="src"><pre><code class="objc">        }) { (error) in</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">89</td>
-<td class="src"><pre><code class="objc">            self.hideLoading()</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">90</td>
-<td class="src"><pre><code class="objc">            self.showErrorAlert(withMessage: "N&atilde;o foi poss&iacute;vel carregar a lista de cervejas! :(")</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">91</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="covered">
-<td class="num">92</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="never">
-<td class="num">93</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">94</td>
-<td class="src"><pre><code class="objc">    // MARK: - Setup</code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
-<td class="num">95</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="covered">
-<td class="num">96</td>
-<td class="src"><pre><code class="objc">    func setupCollectionView() {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">97</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">98</td>
-<td class="src"><pre><code class="objc">        self.refresher.addTarget(self, action: #selector(refreshBeers), for: .valueChanged)</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">99</td>
-<td class="src"><pre><code class="objc">        self.collectionView.alwaysBounceVertical = true</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">100</td>
-<td class="src"><pre><code class="objc">        if #available(iOS 10.0, *) {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">101</td>
-<td class="src"><pre><code class="objc">            self.collectionView.refreshControl = self.refresher</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">102</td>
-<td class="src"><pre><code class="objc">        } else {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="missed">
-<td class="num">103</td>
-<td class="src"><pre><code class="objc">            self.collectionView.addSubview(self.refresher)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="covered">
-<td class="num">104</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">105</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">106</td>
-<td class="src"><pre><code class="objc">        self.dataSourceDelegate.delegate = self</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">107</td>
-<td class="src"><pre><code class="objc">        self.collectionView.delegate = self.dataSourceDelegate</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">108</td>
-<td class="src"><pre><code class="objc">        self.collectionView.dataSource = self.dataSourceDelegate</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">109</td>
-<td class="src"><pre><code class="objc">        self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">110</td>
-<td class="src"><pre><code class="objc">        self.collectionView.reloadData()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">111</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="missed">
-<td class="num">112</td>
-<td class="src"><pre><code class="objc">        self.collectionView.addInfiniteScroll { (collection) in</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">113</td>
-<td class="src"><pre><code class="objc">            self.page+=1</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">114</td>
 <td class="src"><pre><code class="objc">            self.loadBeers(page: self.page)</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">115</td>
+<td class="num">60</td>
 <td class="src"><pre><code class="objc">        }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
-<tr class="covered">
-<td class="num">116</td>
-<td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">117</td>
+<tr class="missed">
+<td class="num">61</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">118</td>
+<td class="num">62</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">119</td>
+<td class="num">63</td>
+<td class="src"><pre><code class="objc">    // MARK: - Request</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">64</td>
+<td class="src"><pre><code class="objc">    func loadBeers(page: Int, loadingControl: Bool = false) {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">65</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">66</td>
+<td class="src"><pre><code class="objc">        if loadingControl {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">67</td>
+<td class="src"><pre><code class="objc">            self.showLoading()</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">69</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="missed">
+<td class="num">70</td>
+<td class="src"><pre><code class="objc">        ApiClient.sharedApliClient.beers(onPage: page, success: { (beers) in</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">71</td>
+<td class="src"><pre><code class="objc">            </code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">72</td>
+<td class="src"><pre><code class="objc">            self.hideLoading()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">73</td>
+<td class="src"><pre><code class="objc">            </code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">74</td>
+<td class="src"><pre><code class="objc">            if let list = beers as? [BeerModel] {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">75</td>
+<td class="src"><pre><code class="objc">                self.updateScreen(withBeers: list)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">76</td>
+<td class="src"><pre><code class="objc">            } else {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">77</td>
+<td class="src"><pre><code class="objc">                self.showErrorAlert(withMessage: "Ocorreu algum erro equanto prepar&aacute;vamos as cervejas para voc&ecirc;! :(") {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">78</td>
+<td class="src"><pre><code class="objc">                    self.handleTryAgain()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">79</td>
+<td class="src"><pre><code class="objc">                }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">80</td>
+<td class="src"><pre><code class="objc">            }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">81</td>
+<td class="src"><pre><code class="objc">        }) { (error) in</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">82</td>
+<td class="src"><pre><code class="objc">            self.hideLoading()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">83</td>
+<td class="src"><pre><code class="objc">            </code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">84</td>
+<td class="src"><pre><code class="objc">            self.showErrorAlert(withMessage: "N&atilde;o foi poss&iacute;vel carregar a lista de cervejas! :(") {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">85</td>
+<td class="src"><pre><code class="objc">                self.handleTryAgain()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">86</td>
+<td class="src"><pre><code class="objc">            }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">87</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">88</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="never">
+<td class="num">89</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">90</td>
+<td class="src"><pre><code class="objc">    // MARK: - Setup</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">91</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">92</td>
+<td class="src"><pre><code class="objc">    func setupCollectionView() {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">93</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">94</td>
+<td class="src"><pre><code class="objc">        self.refresher.addTarget(self, action: #selector(refreshBeers), for: .valueChanged)</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">95</td>
+<td class="src"><pre><code class="objc">        self.collectionView.alwaysBounceVertical = true</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">96</td>
+<td class="src"><pre><code class="objc">        if #available(iOS 10.0, *) {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">97</td>
+<td class="src"><pre><code class="objc">            self.collectionView.refreshControl = self.refresher</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">98</td>
+<td class="src"><pre><code class="objc">        } else {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="missed">
+<td class="num">99</td>
+<td class="src"><pre><code class="objc">            self.collectionView.addSubview(self.refresher)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">100</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">101</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">102</td>
+<td class="src"><pre><code class="objc">        self.dataSourceDelegate.delegate = self</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">103</td>
+<td class="src"><pre><code class="objc">        self.collectionView.delegate = self.dataSourceDelegate</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">104</td>
+<td class="src"><pre><code class="objc">        self.collectionView.dataSource = self.dataSourceDelegate</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">105</td>
+<td class="src"><pre><code class="objc">        self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">106</td>
+<td class="src"><pre><code class="objc">        self.collectionView.reloadData()</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">107</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="missed">
+<td class="num">108</td>
+<td class="src"><pre><code class="objc">        self.collectionView.addInfiniteScroll { (collection) in</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">109</td>
+<td class="src"><pre><code class="objc">            self.page+=1</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">110</td>
+<td class="src"><pre><code class="objc">            self.loadBeers(page: self.page)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">111</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">112</td>
+<td class="src"><pre><code class="objc">        </code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">113</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="never">
+<td class="num">114</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">115</td>
 <td class="src"><pre><code class="objc">    // MARK: - BeersCollectionViewDataSourceDelegate</code></pre></td>
 <td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">116</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">117</td>
+<td class="src"><pre><code class="objc">    func didSelectedBeer(beer: BeerModel) {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">118</td>
+<td class="src"><pre><code class="objc">        self.navigationController?.pushViewController(BeersScreenBuilder.beerDetailController(beer: beer), animated: true)</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">119</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">1x</td>
 </tr>
 <tr class="never">
 <td class="num">120</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="missed">
+<tr class="never">
 <td class="num">121</td>
-<td class="src"><pre><code class="objc">    func didSelectedBeer(beer: BeerModel) {</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">122</td>
-<td class="src"><pre><code class="objc">        self.navigationController?.pushViewController(BeersScreenBuilder.beerDetailCOntroller(beer: beer), animated: true)</code></pre></td>
-<td class="coverage">!</td>
-</tr>
-<tr class="missed">
-<td class="num">123</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">!</td>
+<td class="src"><pre><code class="objc">    // MARK: - ViewCodingProtocol</code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">124</td>
+<td class="num">122</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="never">
+<tr class="covered">
+<td class="num">123</td>
+<td class="src"><pre><code class="objc">    func buildViewHierarchy() {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">124</td>
+<td class="src"><pre><code class="objc">        self.view.addSubview(self.collectionView)</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
 <td class="num">125</td>
-<td class="src"><pre><code class="objc">    // MARK: - ViewCodingProtocol</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
 <td class="num">126</td>
@@ -644,71 +644,51 @@
 </tr>
 <tr class="covered">
 <td class="num">127</td>
-<td class="src"><pre><code class="objc">    func buildViewHierarchy() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">    func setupConstraints() {</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">128</td>
-<td class="src"><pre><code class="objc">        self.view.addSubview(self.collectionView)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">        self.collectionView.snp.makeConstraints { (make) in</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">129</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">            make.top.equalToSuperview()</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">130</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">            make.bottom.equalToSuperview()</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">131</td>
-<td class="src"><pre><code class="objc">    func setupConstraints() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">            make.leading.equalToSuperview()</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">132</td>
-<td class="src"><pre><code class="objc">        self.collectionView.snp.makeConstraints { (make) in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">            make.trailing.equalToSuperview()</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">133</td>
-<td class="src"><pre><code class="objc">            make.top.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">134</td>
-<td class="src"><pre><code class="objc">            make.bottom.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">135</td>
-<td class="src"><pre><code class="objc">            make.leading.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">136</td>
-<td class="src"><pre><code class="objc">            make.trailing.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">137</td>
-<td class="src"><pre><code class="objc">        }</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">138</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
-<td class="num">139</td>
+<td class="num">135</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">140</td>
+<td class="num">136</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>

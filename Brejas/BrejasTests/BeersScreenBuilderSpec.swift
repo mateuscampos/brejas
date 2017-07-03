@@ -30,12 +30,14 @@ class BeersScreenBuilderSpec: QuickSpec {
             
             it("has to instantiate beers detail controller") {
                 
-//                let jsonData = JsonHelper.sharedInstance.jsonDataFromFile(BeerModelSpec.self, name: "BeerMock")
-//                let jsonString = String(data: jsonData, encoding: .utf8)
-//                let object: BeerModel = Mapper<BeerModel>().map(JSONString: jsonString!)!
+                let jsonData = JsonHelper.sharedInstance.jsonDataFromFile(BeerModelSpec.self, name: "BeerMock")
+                let jsonString = String(data: jsonData, encoding: .utf8)
+                let object: BeerModel = Mapper<BeerModel>().map(JSONString: jsonString!)!
+                
+                let controllerWithBeer = BeersScreenBuilder.beerDetailController(beer: object)
+                expect(controllerWithBeer).to(beAnInstanceOf(BeerDetailController.self))
                 
                 let controller = BeersScreenBuilder.beerDetailController()
-                
                 expect(controller).to(beAnInstanceOf(BeerDetailController.self))
                 
             }

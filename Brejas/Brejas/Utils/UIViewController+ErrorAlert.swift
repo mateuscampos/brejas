@@ -11,7 +11,7 @@ import UIKit
 
 extension UIViewController {
     
-    func showErrorAlert(withMessage message: String, tryAgain: @escaping () -> ()) {
+    func showErrorAlert(withMessage message: String, tryAgain: @escaping () -> ()?) {
         
         let alertController: UIAlertController = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
