@@ -19,10 +19,13 @@ class BeersScreenBuilder {
         
     }
     
-    static func beerDetailCOntroller(beer: BeerModel) -> BeerDetailController {
+    static func beerDetailCOntroller(beer: BeerModel? = nil) -> BeerDetailController {
         
-        let controller = BeerDetailController(beer: beer)
-        return controller
+        if let object = beer {
+            return BeerDetailController(beer: object)
+        } else {
+            return BeerDetailController()
+        }
         
     }
     

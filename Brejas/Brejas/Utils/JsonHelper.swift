@@ -28,25 +28,4 @@ class JsonHelper: NSObject {
         }
     }
     
-    func jsonFromString(_ string : String) -> AnyObject?{
-        guard let stringData = string.data(using: String.Encoding.utf8) else {
-            return nil
-        }
-        
-        do {
-            let json = try JSONSerialization.jsonObject(with: stringData, options: JSONSerialization.ReadingOptions(rawValue: 0))
-            
-            if let jsonDict = json as? [String : AnyObject] {
-                return jsonDict as AnyObject?
-            }else if let jsonArray = json as? [[String : AnyObject]] {
-                return jsonArray as AnyObject?
-            }else{
-                return nil
-            }
-            
-        }catch _ {
-            return nil
-        }
-    }
-    
 }

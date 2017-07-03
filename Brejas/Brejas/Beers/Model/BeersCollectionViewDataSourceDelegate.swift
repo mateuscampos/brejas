@@ -11,22 +11,16 @@ import UIKit
 
 class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    var beers: Array<BeerModel>?
-    var delegate: BeerListViewDelegate
+    var beers: [BeerModel] = []
+    var delegate: BeerListViewDelegate?
     
-    init(beerListDelegate: BeerListViewDelegate) {
-
-        self.delegate = beerListDelegate
-        
+    override init() {
+        super.init()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if let count = self.beers?.count {
-            return count
-        } else {
-            return 0
-        }
+        return self.beers.count
         
     }
     
@@ -34,9 +28,7 @@ class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSourc
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BeerCollectionViewCellIdentifier, for: indexPath) as! BeerCollectionViewCell
         
-        if let beer = self.beers?[indexPath.row] {
-            cell.setupCell(beer: beer)
-        }
+        cell.setupCell(beer: self.beers[indexPath.row])
         
         return cell
         
@@ -44,8 +36,8 @@ class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if let beer = self.beers?[indexPath.row] {
-            self.delegate.didSelectedBeer(beer: beer)
+        if let delegate = self.delegate {
+            delegate.didSelectedBeer(beer: self.beers[indexPath.row])
         }
         
     }

@@ -1,2 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites tests='0' failures='0'/>
+<testsuites name='BrejasTests.xctest' tests='8' failures='0'>
+  <testsuite name='BrejasTests.BeerModelSpec' tests='1' failures='0'>
+    <testcase classname='BrejasTests.BeerModelSpec' name='the_BeerModel_parser__has_json_file' time='0.008'/>
+  </testsuite>
+  <testsuite name='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' tests='6' failures='0'>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__has_to_initialize' time='0.002'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_return_number_of_rows' time='0.001'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_return_a_cell' time='0.001'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_trigger_selection' time='0.001'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_item_size' time='0.001'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_instet' time='0.001'/>
+  </testsuite>
+  <testsuite name='BrejasTests.ErrorResultSpec' tests='1' failures='0'>
+    <testcase classname='BrejasTests.ErrorResultSpec' name='the_ErrorResult_parser__has_initialization' time='0.002'/>
+  </testsuite>
+</testsuites>

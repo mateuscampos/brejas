@@ -1,0 +1,7 @@
+xcodeproj: Brejas.xcodeproj
+workspace: Brejas.xcworkspace
+source_directory: Brejas
+output_directory: slather-report
+scheme: Brejas
+coverage_service: html
+ignore: "../**/*/Xcode*"

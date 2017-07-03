@@ -11,8 +11,8 @@ import UIKit
 
 class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDelegate {
     
-    var beers: [BeerModel] = []
-    var dataSourceDelegate: BeersCollectionViewDataSourceDelegate?
+    var beersList: [BeerModel] = []
+    var dataSourceDelegate: BeersCollectionViewDataSourceDelegate = BeersCollectionViewDataSourceDelegate()
     var collectionView: UICollectionView = BeersCollectionView()
     var page: Int = 1
     var refresher: UIRefreshControl = UIRefreshControl()
@@ -28,15 +28,15 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
     // MARK: - Action
     func updateScreen(withBeers beers: [BeerModel]) {
         
-        if self.beers.count == 0 {
-            self.beers = beers
-            self.dataSourceDelegate?.beers = self.beers
+        if self.beersList.count == 0 {
+            self.beersList = beers
+            self.dataSourceDelegate.beers = self.beersList
             self.collectionView.reloadData()
         } else {
             for beer in beers {
-                let indexPath = IndexPath(item: self.beers.count, section: 0)
-                self.beers.append(beer)
-                self.dataSourceDelegate?.beers = self.beers
+                let indexPath = IndexPath(item: self.beersList.count, section: 0)
+                self.beersList.append(beer)
+                self.dataSourceDelegate.beers = self.beersList
                 self.collectionView.insertItems(at: [indexPath])
             }
         }
@@ -47,7 +47,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
     
     func refreshBeers() {
         self.refresher.beginRefreshing()
-        self.beers.removeAll()
+        self.beersList.removeAll()
         self.page = 1
         self.loadBeers(page: self.page)
     }
@@ -103,7 +103,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             self.collectionView.addSubview(self.refresher)
         }
 
-        self.dataSourceDelegate = BeersCollectionViewDataSourceDelegate(beerListDelegate: self)
+        self.dataSourceDelegate.delegate = self
         self.collectionView.delegate = self.dataSourceDelegate
         self.collectionView.dataSource = self.dataSourceDelegate
         self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
