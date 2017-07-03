@@ -176,15 +176,15 @@
 		7B5222C41F067DC800F35368 /* BrejasTests */ = {
 			isa = PBXGroup;
 			children = (
+				7BEE9D5C1F0A760C00DF3F58 /* BeerDetailControllerSpec.swift */,
+				7BB02AF61F09C5A300136EA1 /* BeerMock.json */,
 				7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */,
-				7BB02AF81F09C6A200136EA1 /* ErrorResultSpec.swift */,
 				7BB02AFA1F09C7A900136EA1 /* BeersCollectionViewDataSourceDelegateSpec.swift */,
 				7BB02AFC1F09E79F00136EA1 /* BeersScreenBuilderSpec.swift */,
 				7BB02AFE1F09EA1C00136EA1 /* BillListControllerSpec.swift */,
-				7BEE9D5C1F0A760C00DF3F58 /* BeerDetailControllerSpec.swift */,
+				7BB02AF81F09C6A200136EA1 /* ErrorResultSpec.swift */,
 				7B5222C71F067DC800F35368 /* Info.plist */,
 				7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */,
-				7BB02AF61F09C5A300136EA1 /* BeerMock.json */,
 			);
 			path = BrejasTests;
 			sourceTree = "<group>";
@@ -253,8 +253,8 @@
 				7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */,
 				7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */,
 				7BD402C21F096E5F009C79E4 /* LoadingView.swift */,
-				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
 				7BEE9D5A1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift */,
+				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

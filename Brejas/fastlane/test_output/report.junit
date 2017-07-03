@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='BrejasTests.xctest' tests='14' failures='0'>
   <testsuite name='BrejasTests.BeerDetailControllerSpec' tests='2' failures='0'>
-    <testcase classname='BrejasTests.BeerDetailControllerSpec' name='the_BeersListController_init__has_life_cycle' time='0.010'/>
-    <testcase classname='BrejasTests.BeerDetailControllerSpec' name='the_BeersListController_init__configure_view' time='0.017'/>
+    <testcase classname='BrejasTests.BeerDetailControllerSpec' name='the_BeersListController_init__has_life_cycle' time='0.013'/>
+    <testcase classname='BrejasTests.BeerDetailControllerSpec' name='the_BeersListController_init__configure_view' time='0.018'/>
   </testsuite>
   <testsuite name='BrejasTests.BeerModelSpec' tests='1' failures='0'>
-    <testcase classname='BrejasTests.BeerModelSpec' name='the_BeerModel_parser__has_json_file' time='0.003'/>
+    <testcase classname='BrejasTests.BeerModelSpec' name='the_BeerModel_parser__has_json_file' time='0.002'/>
   </testsuite>
   <testsuite name='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' tests='5' failures='0'>
-    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__has_to_initialize' time='0.014'/>
-    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_return_number_of_rows' time='0.008'/>
-    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_trigger_selection' time='0.006'/>
-    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_item_size' time='0.007'/>
-    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_instet' time='0.011'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__has_to_initialize' time='0.009'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_return_number_of_rows' time='0.005'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_trigger_selection' time='0.007'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_item_size' time='0.009'/>
+    <testcase classname='BrejasTests.BeersCollectionViewDataSourceDelegateSpec' name='the_BeersCollectionViewDataSourceDelegate__should_set_instet' time='0.005'/>
   </testsuite>
   <testsuite name='BrejasTests.BeersScreenBuilderSpec' tests='2' failures='0'>
     <testcase classname='BrejasTests.BeersScreenBuilderSpec' name='the_ScreenBuilder_parser__has_to_instantiate_beers_list_controller' time='0.002'/>
     <testcase classname='BrejasTests.BeersScreenBuilderSpec' name='the_ScreenBuilder_parser__has_to_instantiate_beers_detail_controller' time='0.005'/>
   </testsuite>
   <testsuite name='BrejasTests.BillListControllerSpec' tests='3' failures='0'>
-    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__has_life_cycle' time='0.006'/>
-    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__should_update_layout' time='0.016'/>
-    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__should_call_detail' time='0.005'/>
+    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__has_life_cycle' time='0.004'/>
+    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__should_update_layout' time='0.007'/>
+    <testcase classname='BrejasTests.BillListControllerSpec' name='the_BeersListController_init__should_call_detail' time='0.002'/>
   </testsuite>
   <testsuite name='BrejasTests.ErrorResultSpec' tests='1' failures='0'>
-    <testcase classname='BrejasTests.ErrorResultSpec' name='the_ErrorResult_parser__has_initialization' time='0.002'/>
+    <testcase classname='BrejasTests.ErrorResultSpec' name='the_ErrorResult_parser__has_initialization' time='0.001'/>
   </testsuite>
 </testsuites>
