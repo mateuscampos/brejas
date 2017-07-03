@@ -52,21 +52,12 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
         self.loadBeers(page: self.page)
     }
     
-    func showErrorAlert(withMessage message: String) {
-        
-        let alertController: UIAlertController = UIAlertController(title: "Erro", message: message, preferredStyle: .alert)
-        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
-        let tryAgainAction: UIAlertAction = UIAlertAction(title: "Tentar Novamente", style: .default) { (action) in
-            if self.page == 1 {
-                self.loadBeers(page: self.page, loadingControl: true)
-            } else {
-                self.loadBeers(page: self.page)
-            }
+    func handleTryAgain() {
+        if self.page == 1 {
+            self.loadBeers(page: self.page, loadingControl: true)
+        } else {
+            self.loadBeers(page: self.page)
         }
-        alertController.addAction(cancelAction)
-        alertController.addAction(tryAgainAction)
-        self.present(alertController, animated: true, completion: nil)
-        
     }
     
     // MARK: - Request
@@ -83,11 +74,16 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             if let list = beers as? [BeerModel] {
                 self.updateScreen(withBeers: list)
             } else {
-                self.showErrorAlert(withMessage: "Ocorreu algum erro equanto preparávamos as cervejas para você! :(")
+                self.showErrorAlert(withMessage: "Ocorreu algum erro equanto preparávamos as cervejas para você! :(") {
+                    self.handleTryAgain()
+                }
             }
         }) { (error) in
             self.hideLoading()
-            self.showErrorAlert(withMessage: "Não foi possível carregar a lista de cervejas! :(")
+            
+            self.showErrorAlert(withMessage: "Não foi possível carregar a lista de cervejas! :(") {
+                self.handleTryAgain()
+            }
         }
     }
     
@@ -119,7 +115,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
     // MARK: - BeersCollectionViewDataSourceDelegate
     
     func didSelectedBeer(beer: BeerModel) {
-        self.navigationController?.pushViewController(BeersScreenBuilder.beerDetailCOntroller(beer: beer), animated: true)
+        self.navigationController?.pushViewController(BeersScreenBuilder.beerDetailController(beer: beer), animated: true)
     }
     
     // MARK: - ViewCodingProtocol

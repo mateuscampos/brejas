@@ -36,9 +36,7 @@ class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if let delegate = self.delegate {
-            delegate.didSelectedBeer(beer: self.beers[indexPath.row])
-        }
+        delegate?.didSelectedBeer(beer: self.beers[indexPath.row])
         
     }
     

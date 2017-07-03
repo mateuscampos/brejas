@@ -34,7 +34,7 @@ class BeersScreenBuilderSpec: QuickSpec {
 //                let jsonString = String(data: jsonData, encoding: .utf8)
 //                let object: BeerModel = Mapper<BeerModel>().map(JSONString: jsonString!)!
                 
-                let controller = BeersScreenBuilder.beerDetailCOntroller()
+                let controller = BeersScreenBuilder.beerDetailController()
                 
                 expect(controller).to(beAnInstanceOf(BeerDetailController.self))
                 

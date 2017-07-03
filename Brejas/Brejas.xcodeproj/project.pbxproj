@@ -38,6 +38,7 @@
 		7BD402CC1F09A86F009C79E4 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CB1F09A86F009C79E4 /* JsonHelper.swift */; };
 		7BD402CE1F09AAF3009C79E4 /* ResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */; };
 		7BD402D01F09AC5E009C79E4 /* BeerModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */; };
+		7BEE9D5B1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE9D5A1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift */; };
 		EC725B6C5141C067FEAC3685 /* Pods_Brejas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6B81E1D791BC8165F9A25A /* Pods_Brejas.framework */; };
 		ED9F5B7085C839EEDAC2FF70 /* Pods_BrejasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2194B397EFB406E496B4219F /* Pods_BrejasUITests.framework */; };
 		EE01C48019D36E2F60329DFB /* Pods_BrejasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8166AFB8860E0CCE07E4620 /* Pods_BrejasTests.framework */; };
@@ -99,6 +100,7 @@
 		7BD402CD1F09AAF3009C79E4 /* ResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseMock.json; sourceTree = "<group>"; };
 		7BD402CF1F09AC5E009C79E4 /* BeerModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModelSpec.swift; sourceTree = "<group>"; };
 		7BE03A411F09B5A9009135AE /* Brejas-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brejas-Bridging-Header.h"; sourceTree = "<group>"; };
+		7BEE9D5A1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorAlert.swift"; sourceTree = "<group>"; };
 		7D33286C5E53DA78C85BF20A /* Pods-Brejas-BrejasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D9AEE6DC6A711C9C9F518DD /* Pods-Brejas-BrejasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasTests/Pods-Brejas-BrejasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB38CE6F0CB67000A82AA9C /* Pods-Brejas-BrejasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas-BrejasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas-BrejasUITests/Pods-Brejas-BrejasUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				7BD402C41F096FFD009C79E4 /* LoadingView+UIViewController.swift */,
 				7BD402C21F096E5F009C79E4 /* LoadingView.swift */,
 				7B5222EC1F068A7300F35368 /* ViewCodingProtocol.swift */,
+				7BEE9D5A1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEE9D5B1F0A71DA00DF3F58 /* UIViewController+ErrorAlert.swift in Sources */,
 				7BD402B81F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift in Sources */,
 				7BD402BA1F0940B2009C79E4 /* BeerCollectionViewCell.swift in Sources */,
 				7B5222ED1F068A7300F35368 /* ViewCodingProtocol.swift in Sources */,
