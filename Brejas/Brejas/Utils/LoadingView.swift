@@ -44,7 +44,7 @@ class LoadingView: UIView, ViewCodingProtocol {
     func configureViews() {
         self.indicator.activityIndicatorViewStyle = .whiteLarge
         self.indicator.startAnimating()
-        self.backgroundColor = UIColor(colorLiteralRed: 255.0/255.0, green: 204.0/255.0, blue: 0.0/255.0, alpha: 1)
+        self.backgroundColor = UIColor(red: 255.0/255.0, green: 204.0/255.0, blue: 0.0/255.0, alpha: 1)
     }
     
 }
