@@ -9,13 +9,31 @@
 import Foundation
 import UIKit
 
-class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDelegate {
+class BeersListController: UIViewController, ViewCodingProtocol {
     
     var beersList: [BeerModel] = []
     var dataSourceDelegate: BeerDataSourceProtocol?
     var collectionView: UICollectionView = BeersCollectionView()
-    var page: Int = 1
+    var page: Int
     var refresher: UIRefreshControl = UIRefreshControl()
+    let client: BeerClientProtocol
+    let beerFactory: BeerDataSourceFactory
+    
+    init(client: BeerClientProtocol = BeerClient(),
+         page: Int = 1,
+         beerFactory: BeerDataSourceFactory) {
+        
+        self.client = client
+        self.page = page
+        self.beerFactory = beerFactory
+        self.collectionView = beerFactory.collection
+        self.dataSourceDelegate = beerFactory.dataSource()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +63,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
         
     }
     
-    func refreshBeers() {
+    @objc func refreshBeers() {
         self.refresher.beginRefreshing()
         self.beersList.removeAll()
         self.page = 1
@@ -67,7 +85,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             self.showLoading()
         }
         
-        BeerClient().beers(onPage: page, success: { (beers) in
+        self.client.beers(onPage: page, success: { (beers) in
             
             self.hideLoading()
             
@@ -90,7 +108,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
     // MARK: - Setup
     
     func setupCollectionView() {
-        
+
         self.refresher.addTarget(self, action: #selector(refreshBeers), for: .valueChanged)
         self.collectionView.alwaysBounceVertical = true
         if #available(iOS 10.0, *) {
@@ -99,22 +117,11 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             self.collectionView.addSubview(self.refresher)
         }
 
-        let beerFactory = BeerDataSourceFactory(collection: self.collectionView, delegate: self)
-        self.dataSourceDelegate = beerFactory.dataSource()
-        self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
-        self.collectionView.reloadData()
-        
         self.collectionView.addInfiniteScroll { (collection) in
             self.page+=1
             self.loadBeers(page: self.page)
         }
         
-    }
-    
-    // MARK: - BeersCollectionViewDataSourceDelegate
-    
-    func didSelectedBeer(beer: BeerModel) {
-        self.navigationController?.pushViewController(BeersScreenBuilder.beerDetailController(beer: beer), animated: true)
     }
     
     // MARK: - ViewCodingProtocol

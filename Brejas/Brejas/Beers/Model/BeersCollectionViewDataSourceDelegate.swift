@@ -9,9 +9,8 @@
 import Foundation
 import UIKit
 
-protocol BeerListViewDelegate: class {
-    func didSelectedBeer(beer: BeerModel)
-}
+typealias SelectedItem = (_ selectedItem: BeerModel) -> ()
+
 
 protocol BeerDataSourceProtocol {
     func setBeerDataSource(beers: [BeerModel])
@@ -20,10 +19,10 @@ protocol BeerDataSourceProtocol {
 class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BeerDataSourceProtocol {
     
     private var beers: [BeerModel] = []
-    private weak var delegate: BeerListViewDelegate?
+    private let selectionBlock: SelectedItem
     
-    init(beers:[BeerModel] = [], delegate: BeerListViewDelegate) {
-        self.delegate = delegate
+    init(beers:[BeerModel] = [], selectedItem: @escaping SelectedItem) {
+        self.selectionBlock = selectedItem
         self.beers = beers
     }
     
@@ -48,9 +47,7 @@ class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        delegate?.didSelectedBeer(beer: self.beers[indexPath.row])
-        
+        self.selectionBlock(self.beers[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

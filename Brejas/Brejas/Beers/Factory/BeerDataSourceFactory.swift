@@ -11,13 +11,18 @@ import Foundation
 class BeerDataSourceFactory {
     
     private var beerDataSource: BeersCollectionViewDataSourceDelegate
-    private let collection: UICollectionView
+    let collection: UICollectionView
     
-    init(collection: UICollectionView, delegate: BeerListViewDelegate) {
-        self.beerDataSource = BeersCollectionViewDataSourceDelegate(delegate: delegate)
+    init(collection: UICollectionView = BeersCollectionView(),
+         selectedItem: @escaping SelectedItem) {
+        
+        self.beerDataSource = BeersCollectionViewDataSourceDelegate(selectedItem: selectedItem)
         self.collection = collection
         self.collection.dataSource = beerDataSource
         self.collection.delegate = beerDataSource
+        self.collection.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
+        self.collection.reloadData()
+        
     }
     
     func dataSource() -> BeerDataSourceProtocol {

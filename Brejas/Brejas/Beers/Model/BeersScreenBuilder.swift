@@ -14,7 +14,11 @@ class BeersScreenBuilder {
     static func beersListController() -> UINavigationController {
         
         let navController: UINavigationController = UINavigationController()
-        navController.viewControllers = [BeersListController()]
+        let factory = BeerDataSourceFactory { selectedItem in
+            navController.pushViewController(self.beerDetailController(beer: selectedItem), animated: true)
+        }
+        let beerController = BeersListController(beerFactory: factory)
+        navController.viewControllers = [beerController]
         return navController
         
     }
