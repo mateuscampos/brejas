@@ -9,13 +9,26 @@
 import Foundation
 import UIKit
 
-class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+protocol BeerListViewDelegate: class {
+    func didSelectedBeer(beer: BeerModel)
+}
+
+protocol BeerDataSourceProtocol {
+    func setBeerDataSource(beers: [BeerModel])
+}
+
+class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BeerDataSourceProtocol {
     
-    var beers: [BeerModel] = []
-    var delegate: BeerListViewDelegate?
+    private var beers: [BeerModel] = []
+    private weak var delegate: BeerListViewDelegate?
     
-    override init() {
-        super.init()
+    init(beers:[BeerModel] = [], delegate: BeerListViewDelegate) {
+        self.delegate = delegate
+        self.beers = beers
+    }
+    
+    func setBeerDataSource(beers: [BeerModel]) {
+        self.beers = beers
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

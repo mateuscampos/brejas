@@ -12,7 +12,7 @@ import UIKit
 class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDelegate {
     
     var beersList: [BeerModel] = []
-    var dataSourceDelegate: BeersCollectionViewDataSourceDelegate = BeersCollectionViewDataSourceDelegate()
+    var dataSourceDelegate: BeerDataSourceProtocol?
     var collectionView: UICollectionView = BeersCollectionView()
     var page: Int = 1
     var refresher: UIRefreshControl = UIRefreshControl()
@@ -30,13 +30,13 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
         
         if self.beersList.count == 0 {
             self.beersList = beers
-            self.dataSourceDelegate.beers = self.beersList
+            self.dataSourceDelegate?.setBeerDataSource(beers: self.beersList)
             self.collectionView.reloadData()
         } else {
             for beer in beers {
                 let indexPath = IndexPath(item: self.beersList.count, section: 0)
                 self.beersList.append(beer)
-                self.dataSourceDelegate.beers = self.beersList
+                self.dataSourceDelegate?.setBeerDataSource(beers: self.beersList)
                 self.collectionView.insertItems(at: [indexPath])
             }
         }
@@ -99,9 +99,8 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             self.collectionView.addSubview(self.refresher)
         }
 
-        self.dataSourceDelegate.delegate = self
-        self.collectionView.delegate = self.dataSourceDelegate
-        self.collectionView.dataSource = self.dataSourceDelegate
+        let beerFactory = BeerDataSourceFactory(collection: self.collectionView, delegate: self)
+        self.dataSourceDelegate = beerFactory.dataSource()
         self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
         self.collectionView.reloadData()
         
