@@ -67,7 +67,7 @@ class BeersListController: UIViewController, ViewCodingProtocol, BeerListViewDel
             self.showLoading()
         }
         
-        ApiClient.sharedApliClient.beers(onPage: page, success: { (beers) in
+        BeerClient().beers(onPage: page, success: { (beers) in
             
             self.hideLoading()
             
