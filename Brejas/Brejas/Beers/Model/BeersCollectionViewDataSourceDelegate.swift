@@ -9,24 +9,19 @@
 import Foundation
 import UIKit
 
-typealias SelectedItem = (_ selectedItem: BeerModel) -> ()
-
-
-protocol BeerDataSourceProtocol {
-    func setBeerDataSource(beers: [BeerModel])
-}
-
-class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, BeerDataSourceProtocol {
+class BeersCollectionViewDataSourceDelegate<T: UICollectionViewCell & SetupableCell & ConfigurableCell>: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    private var beers: [BeerModel] = []
+    typealias DataType = T.DataType
+    private var beers: [DataType] = []
     private let selectionBlock: SelectedItem
+    typealias SelectedItem = (_ selectedItem: DataType) -> ()
     
-    init(beers:[BeerModel] = [], selectedItem: @escaping SelectedItem) {
+    init(beers:[DataType] = [], selectedItem: @escaping SelectedItem) {
         self.selectionBlock = selectedItem
         self.beers = beers
     }
     
-    func setBeerDataSource(beers: [BeerModel]) {
+    func setBeerDataSource(beers: [DataType]) {
         self.beers = beers
     }
     
@@ -38,9 +33,11 @@ class BeersCollectionViewDataSourceDelegate: NSObject, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BeerCollectionViewCellIdentifier, for: indexPath) as! BeerCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: T.cellIdentifier, for: indexPath) as! T
         
-        cell.setupCell(beer: self.beers[indexPath.row])
+        let data = self.beers[indexPath.row]
+        
+        cell.setupCell(data: data)
         
         return cell
         

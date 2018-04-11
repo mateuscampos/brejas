@@ -10,22 +10,24 @@ import Foundation
 
 class BeerDataSourceFactory {
     
-    private var beerDataSource: BeersCollectionViewDataSourceDelegate
+    typealias SelectedBeer = (_ selectedItem: BeerModel) -> ()
+    
+    private var beerDataSource: BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell>
     let collection: UICollectionView
     
     init(collection: UICollectionView = BeersCollectionView(),
-         selectedItem: @escaping SelectedItem) {
+         selectedItem: @escaping SelectedBeer) {
         
         self.beerDataSource = BeersCollectionViewDataSourceDelegate(selectedItem: selectedItem)
         self.collection = collection
         self.collection.dataSource = beerDataSource
         self.collection.delegate = beerDataSource
-        self.collection.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCellIdentifier)
+        self.collection.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCell.cellIdentifier)
         self.collection.reloadData()
         
     }
     
-    func dataSource() -> BeerDataSourceProtocol {
+    func dataSource() -> BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell> {
         return self.beerDataSource
     }
     

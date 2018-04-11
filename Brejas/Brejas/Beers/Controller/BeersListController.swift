@@ -12,7 +12,7 @@ import UIKit
 class BeersListController: UIViewController, ViewCodingProtocol {
     
     var beersList: [BeerModel] = []
-    var dataSourceDelegate: BeerDataSourceProtocol?
+    var dataSourceDelegate: BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell>?
     var collectionView: UICollectionView = BeersCollectionView()
     var page: Int
     var refresher: UIRefreshControl = UIRefreshControl()

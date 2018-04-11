@@ -13,7 +13,19 @@ import SnapKit
 
 let BeerCollectionViewCellIdentifier = "BeerCollectionViewCellIdentifier"
 
-class BeerCollectionViewCell: UICollectionViewCell, ViewCodingProtocol {
+protocol ConfigurableCell {
+    static var cellIdentifier: String {get}
+}
+
+protocol SetupableCell {
+    associatedtype DataType
+    func setupCell(data: DataType)
+}
+
+class BeerCollectionViewCell: UICollectionViewCell, ViewCodingProtocol, SetupableCell, ConfigurableCell {
+    
+    typealias DataType = BeerModel
+    static let cellIdentifier = "\(self)"
     
     let beerImageView: UIImageView = {
         let imageView = UIImageView()
@@ -72,24 +84,24 @@ class BeerCollectionViewCell: UICollectionViewCell, ViewCodingProtocol {
     
     // MARK: - Setup cell
     
-    func setupCell(beer: BeerModel) {
+    func setupCell(data: DataType) {
         
         self.alpha = 0
         UIView.animate(withDuration: 0.3) { 
             self.alpha = 1
         }
         
-        if let url = beer.beerImageUrl {
+        if let url = data.beerImageUrl {
             self.loadImage(fromUrl: url)
         }
         
-        if let name = beer.beerName {
+        if let name = data.beerName {
             self.beerName.text = "Name: \(name)"
         } else {
             self.beerName.text = "Name: - "
         }
         
-        if let abv = beer.beerAbv {
+        if let abv = data.beerAbv {
             self.beerAbv.text = "ABV: \(NSString(format: "%.2f", abv))"
         } else {
             self.beerAbv.text = "ABV: - "
