@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 protocol BeerClientProtocol {
     func beers(onPage page:Int, success: @escaping Success, failure: @escaping Failure)
@@ -27,7 +26,12 @@ class BeerClient: BeerClientProtocol {
         
         self.client.request(url: url, success: { data in
             
-            if let object = Mapper<BeerModel>().mapArray(JSONObject: data) {
+            guard let data = data as? Data else {
+                failure(ErrorResult(errorNumber: 999, errorDescription: "Error parsing data from server"))
+                return
+            }
+            
+            if let object = try? JSONDecoder().decode([BeerModel].self, from: data) {
                 success(object)
             } else {
                 failure(ErrorResult(errorNumber: 999, errorDescription: "Error parsing data from server"))

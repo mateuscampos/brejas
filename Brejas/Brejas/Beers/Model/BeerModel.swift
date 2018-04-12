@@ -7,12 +7,8 @@
 //
 
 import Foundation
-import ObjectMapper
 
-
-import ObjectMapper
-
-class BeerModel : Mappable {
+class BeerModel: Codable {
     
     var beerId: Int?
     var beerName: String?
@@ -22,18 +18,14 @@ class BeerModel : Mappable {
     var beerAbv: Float?
     var beerIbu: Float?
     
-    required init?(map: Map) {
-        
-    }
-    
-    func mapping(map: Map) {
-        beerId <- map["id"]
-        beerName <- map["name"]
-        beerTagline <- map["tagline"]
-        beerDescription <- map["description"]
-        beerImageUrl <- map["image_url"]
-        beerAbv <- map["abv"]
-        beerIbu <- map["ibu"]
+    enum CodingKeys: String, CodingKey {
+        case beerId = "id"
+        case beerName = "name"
+        case beerTagline = "tagline"
+        case beerDescription = "description"
+        case beerImageUrl = "image_url"
+        case beerAbv = "abv"
+        case beerIbu = "ibu"
     }
     
 }

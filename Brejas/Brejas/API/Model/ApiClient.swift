@@ -26,8 +26,7 @@ class ApiClient: ApiClientProtocol {
     
     func request(url: String, success: @escaping Success, failure: @escaping Failure) {
         
-        Alamofire.request(url).responseJSON { (response) in
-            
+        Alamofire.request(url).responseData { (response) in
             switch response.result {
                 
             case let .success(data):
@@ -40,6 +39,11 @@ class ApiClient: ApiClientProtocol {
                 failure(ErrorResult(errorNumber: 999, errorDescription: "Could not retrieve the beers"))
             }
         }
+        
+//        Alamofire.request(url).responseJSON { (response) in
+//
+//
+//        }
         
     }
 

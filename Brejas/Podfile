@@ -6,7 +6,6 @@ use_frameworks!
   def all_pods
     pod 'SnapKit'
     pod 'Alamofire'
-    pod 'ObjectMapper'
     pod 'AlamofireImage'
     pod 'UIScrollView-InfiniteScroll'
   end

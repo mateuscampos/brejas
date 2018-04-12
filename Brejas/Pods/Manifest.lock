@@ -3,7 +3,6 @@ PODS:
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
   - Nimble (7.1.0)
-  - ObjectMapper (3.1.0)
   - Quick (1.2.0)
   - SnapKit (4.0.0)
   - UIScrollView-InfiniteScroll (1.0.2)
@@ -12,7 +11,6 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - Nimble
-  - ObjectMapper
   - Quick
   - SnapKit
   - UIScrollView-InfiniteScroll
@@ -21,11 +19,10 @@ SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   Nimble: 9c6651c3021af6de54c3ed90a4a0a87d548f7359
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: 943a72aee7a869948cf8a930cf875b6a83eade26
+PODFILE CHECKSUM: 648f92f8c79b76b578e4d35206d5040fb0f16bff
 
 COCOAPODS: 1.2.1
