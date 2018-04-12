@@ -26,7 +26,6 @@
 		7BB02AFF1F09EA1C00136EA1 /* BillListControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB02AFE1F09EA1C00136EA1 /* BillListControllerSpec.swift */; };
 		7BC169AD1F0693DB00E682DC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169AC1F0693DB00E682DC /* ApiClient.swift */; };
 		7BC169B11F069A0B00E682DC /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B01F069A0B00E682DC /* BeerModel.swift */; };
-		7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC169B51F069E2000E682DC /* ErrorResult.swift */; };
 		7BD402B61F093B73009C79E4 /* BeersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B51F093B73009C79E4 /* BeersListController.swift */; };
 		7BD402B81F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */; };
 		7BD402BA1F0940B2009C79E4 /* BeerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD402B91F0940B2009C79E4 /* BeerCollectionViewCell.swift */; };
@@ -92,7 +91,6 @@
 		7BB02AFE1F09EA1C00136EA1 /* BillListControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillListControllerSpec.swift; sourceTree = "<group>"; };
 		7BC169AC1F0693DB00E682DC /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		7BC169B01F069A0B00E682DC /* BeerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
-		7BC169B51F069E2000E682DC /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 		7BD402B31F093A8D009C79E4 /* BeersCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersCollectionView.swift; sourceTree = "<group>"; };
 		7BD402B51F093B73009C79E4 /* BeersListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersListController.swift; sourceTree = "<group>"; };
 		7BD402B71F093C0C009C79E4 /* BeersCollectionViewDataSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersCollectionViewDataSourceDelegate.swift; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				7BC169AC1F0693DB00E682DC /* ApiClient.swift */,
-				7BC169B51F069E2000E682DC /* ErrorResult.swift */,
 				6B4B8735207CFB2D00815A03 /* BeerClient.swift */,
 				6B4B8737207CFB5500815A03 /* RequestHandler.swift */,
 				6B4B8739207CFB8E00815A03 /* ApiRoutes.swift */,
@@ -626,7 +623,6 @@
 				7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */,
 				7BD402C61F0978B2009C79E4 /* BeersCollectionView.swift in Sources */,
 				7BD402BE1F095AAB009C79E4 /* EnvironmentSetting.swift in Sources */,
-				7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */,
 				6B4B873F207FBD7C00815A03 /* Parser.swift in Sources */,
 				6B4B8741207FC11500815A03 /* Result.swift in Sources */,
 				7BD402B61F093B73009C79E4 /* BeersListController.swift in Sources */,
