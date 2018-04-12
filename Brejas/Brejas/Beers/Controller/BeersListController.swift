@@ -12,7 +12,7 @@ import UIKit
 class BeersListController: UIViewController, ViewCodingProtocol {
     
     var beersList: [BeerModel] = []
-    var dataSourceDelegate: BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell>?
+    var dataSourceDelegate: CollectionViewDataSourceDelegate<BeerCollectionViewCell>?
     var collectionView: UICollectionView = BeersCollectionView()
     var page: Int
     var refresher: UIRefreshControl = UIRefreshControl()
@@ -48,13 +48,13 @@ class BeersListController: UIViewController, ViewCodingProtocol {
         
         if self.beersList.count == 0 {
             self.beersList = beers
-            self.dataSourceDelegate?.setBeerDataSource(beers: self.beersList)
+            self.dataSourceDelegate?.setDataSource(data: self.beersList)
             self.collectionView.reloadData()
         } else {
             for beer in beers {
                 let indexPath = IndexPath(item: self.beersList.count, section: 0)
                 self.beersList.append(beer)
-                self.dataSourceDelegate?.setBeerDataSource(beers: self.beersList)
+                self.dataSourceDelegate?.setDataSource(data: self.beersList)
                 self.collectionView.insertItems(at: [indexPath])
             }
         }

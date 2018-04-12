@@ -1,5 +1,5 @@
 //
-//  BeersCollectionViewDataSourceDelegate.swift
+//  CollectionViewDataSourceDelegate.swift
 //  Brejas
 //
 //  Created by Mateus Campos on 02/07/17.
@@ -9,25 +9,25 @@
 import Foundation
 import UIKit
 
-class BeersCollectionViewDataSourceDelegate<T: UICollectionViewCell & SetupableCell & ConfigurableCell>: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CollectionViewDataSourceDelegate<T: UICollectionViewCell & SetupableCell & ConfigurableCell>: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     typealias DataType = T.DataType
-    private var beers: [DataType] = []
+    private var data: [DataType] = []
     private let selectionBlock: SelectedItem
     typealias SelectedItem = (_ selectedItem: DataType) -> ()
     
-    init(beers:[DataType] = [], selectedItem: @escaping SelectedItem) {
+    init(data:[DataType] = [], selectedItem: @escaping SelectedItem) {
         self.selectionBlock = selectedItem
-        self.beers = beers
+        self.data = data
     }
     
-    func setBeerDataSource(beers: [DataType]) {
-        self.beers = beers
+    func setDataSource(data: [DataType]) {
+        self.data = data
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return self.beers.count
+        return self.data.count
         
     }
     
@@ -35,7 +35,7 @@ class BeersCollectionViewDataSourceDelegate<T: UICollectionViewCell & SetupableC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: T.cellIdentifier, for: indexPath) as! T
         
-        let data = self.beers[indexPath.row]
+        let data = self.data[indexPath.row]
         
         cell.setupCell(data: data)
         
@@ -44,7 +44,7 @@ class BeersCollectionViewDataSourceDelegate<T: UICollectionViewCell & SetupableC
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.selectionBlock(self.beers[indexPath.row])
+        self.selectionBlock(self.data[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

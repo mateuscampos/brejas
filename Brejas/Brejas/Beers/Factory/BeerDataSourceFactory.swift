@@ -12,13 +12,13 @@ class BeerDataSourceFactory {
     
     typealias SelectedBeer = (_ selectedItem: BeerModel) -> ()
     
-    private var beerDataSource: BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell>
+    private var beerDataSource: CollectionViewDataSourceDelegate<BeerCollectionViewCell>
     let collection: UICollectionView
     
     init(collection: UICollectionView = BeersCollectionView(),
          selectedItem: @escaping SelectedBeer) {
         
-        self.beerDataSource = BeersCollectionViewDataSourceDelegate(selectedItem: selectedItem)
+        self.beerDataSource = CollectionViewDataSourceDelegate(selectedItem: selectedItem)
         self.collection = collection
         self.collection.dataSource = beerDataSource
         self.collection.delegate = beerDataSource
@@ -27,7 +27,7 @@ class BeerDataSourceFactory {
         
     }
     
-    func dataSource() -> BeersCollectionViewDataSourceDelegate<BeerCollectionViewCell> {
+    func dataSource() -> CollectionViewDataSourceDelegate<BeerCollectionViewCell> {
         return self.beerDataSource
     }
     
