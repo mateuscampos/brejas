@@ -12,6 +12,8 @@
 		6B4B8738207CFB5500815A03 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B8737207CFB5500815A03 /* RequestHandler.swift */; };
 		6B4B873A207CFB8E00815A03 /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B8739207CFB8E00815A03 /* ApiRoutes.swift */; };
 		6B4B873D207D1E0900815A03 /* BeerDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B873C207D1E0900815A03 /* BeerDataSourceFactory.swift */; };
+		6B4B873F207FBD7C00815A03 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B873E207FBD7C00815A03 /* Parser.swift */; };
+		6B4B8741207FC11500815A03 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4B8740207FC11500815A03 /* Result.swift */; };
 		7B5222B11F067DC700F35368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5222B01F067DC700F35368 /* AppDelegate.swift */; };
 		7B5222B81F067DC700F35368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B71F067DC700F35368 /* Assets.xcassets */; };
 		7B5222BB1F067DC700F35368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5222B91F067DC700F35368 /* LaunchScreen.storyboard */; };
@@ -69,6 +71,8 @@
 		6B4B8737207CFB5500815A03 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		6B4B8739207CFB8E00815A03 /* ApiRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
 		6B4B873C207D1E0900815A03 /* BeerDataSourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDataSourceFactory.swift; sourceTree = "<group>"; };
+		6B4B873E207FBD7C00815A03 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		6B4B8740207FC11500815A03 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		70A3C4623133BDD8857494FD /* Pods-Brejas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brejas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brejas/Pods-Brejas.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5222AD1F067DC700F35368 /* Brejas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brejas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5222B01F067DC700F35368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 				6B4B8735207CFB2D00815A03 /* BeerClient.swift */,
 				6B4B8737207CFB5500815A03 /* RequestHandler.swift */,
 				6B4B8739207CFB8E00815A03 /* ApiRoutes.swift */,
+				6B4B873E207FBD7C00815A03 /* Parser.swift */,
+				6B4B8740207FC11500815A03 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -621,6 +627,8 @@
 				7BD402C61F0978B2009C79E4 /* BeersCollectionView.swift in Sources */,
 				7BD402BE1F095AAB009C79E4 /* EnvironmentSetting.swift in Sources */,
 				7BC169B61F069E2000E682DC /* ErrorResult.swift in Sources */,
+				6B4B873F207FBD7C00815A03 /* Parser.swift in Sources */,
+				6B4B8741207FC11500815A03 /* Result.swift in Sources */,
 				7BD402B61F093B73009C79E4 /* BeersListController.swift in Sources */,
 				7BD402C51F096FFD009C79E4 /* LoadingView+UIViewController.swift in Sources */,
 				7BD402CA1F097B83009C79E4 /* BeerDetailView.swift in Sources */,

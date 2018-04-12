@@ -85,22 +85,17 @@ class BeersListController: UIViewController, ViewCodingProtocol {
             self.showLoading()
         }
         
-        self.client.beers(onPage: page, success: { (beers) in
+        self.client.beers(onPage: page) { (data) in
             
             self.hideLoading()
             
-            if let list = beers as? [BeerModel] {
-                self.updateScreen(withBeers: list)
-            } else {
+            switch data {
+            case let .success(beers):
+                self.updateScreen(withBeers: beers)
+            case .error:
                 self.showErrorAlert(withMessage: "Ocorreu algum erro equanto preparávamos as cervejas para você! :(") {
                     self.handleTryAgain()
                 }
-            }
-        }) { (error) in
-            self.hideLoading()
-            
-            self.showErrorAlert(withMessage: "Não foi possível carregar a lista de cervejas! :(") {
-                self.handleTryAgain()
             }
         }
     }

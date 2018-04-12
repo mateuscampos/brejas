@@ -13,7 +13,7 @@ typealias Failure = (_ error: Any?) -> ()
 typealias Success = (_ response: Any?) -> ()
 
 protocol ApiClientProtocol {
-    func request(url: String, success: @escaping Success, failure: @escaping Failure)
+    func request(url: String, callback: @escaping (Result<Data>) -> Void)
 }
 
 class ApiClient: ApiClientProtocol {
@@ -24,26 +24,22 @@ class ApiClient: ApiClientProtocol {
         self.requestHandler = requestHandler
     }
     
-    func request(url: String, success: @escaping Success, failure: @escaping Failure) {
+    func request(url: String, callback: @escaping (Result<Data>) -> Void) {
         
         Alamofire.request(url).responseData { (response) in
+            
             switch response.result {
                 
             case let .success(data):
-                self.requestHandler.handleRequestResponse(withResponse: response.response, andData: data, success: { (response) in
-                    success(data)
-                }, failure: { (error) in
-                    failure(ErrorResult(errorNumber: response.response?.statusCode ?? 999, errorDescription: "Could not retrieve the beers"))
-                })
-            case .failure:
-                failure(ErrorResult(errorNumber: 999, errorDescription: "Could not retrieve the beers"))
+                
+                self.requestHandler.handleRequestResponse(withResponse: response.response, andData: data, callback: callback)
+                
+            case let .failure (error):
+                
+                callback(.error(error))
+                
             }
         }
-        
-//        Alamofire.request(url).responseJSON { (response) in
-//
-//
-//        }
         
     }
 

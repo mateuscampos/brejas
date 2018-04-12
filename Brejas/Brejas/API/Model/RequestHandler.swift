@@ -9,19 +9,20 @@
 import Foundation
 
 protocol RequestHandlerProtocol {
-    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Any?, success: Success, failure: Failure)
+    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Data, callback: (Result<Data>) -> Void)
 }
 
 class RequestHandler: RequestHandlerProtocol {
     
-    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Any?, success: Success, failure: Failure) {
+    func handleRequestResponse(withResponse response: HTTPURLResponse?, andData data: Data, callback: (Result<Data>) -> Void) {
         
         if let statusCode = response?.statusCode {
             switch statusCode {
             case 200...209:
-                success(data)
+                callback(.success(data))
             default:
-                failure(ErrorResult(errorNumber: statusCode, errorDescription: "Could not retrieve the beers"))
+                let error = NSError(domain: "RequestError", code: statusCode, userInfo: [NSLocalizedDescriptionKey: HTTPURLResponse.localizedString(forStatusCode: statusCode)])
+                callback(.error(error))
             }
         }
     }
