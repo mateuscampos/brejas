@@ -22,7 +22,7 @@ class BeerClient: BeerClientProtocol {
     
     func beers(onPage page:Int, callback: @escaping (Result<[BeerModel]>) -> Void) {
         
-        let url = EnvironmentSetting().baseUrl! + Routes.beer.beers(forPage: page)
+        let url = Routes.beer.beers(forPage: page)
         
         self.client.request(url: url) { (data) in
             

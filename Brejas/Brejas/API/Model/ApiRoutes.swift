@@ -15,7 +15,15 @@ enum Routes: String {
     func beers(forPage page: Int) -> String {
         switch self {
         case .beer:
-            return "beers?page=\(page)"
+            return baseUrl() + "beers?page=\(page)"
+        }
+    }
+    
+    private func baseUrl() -> String {
+        if let url = EnvironmentSetting().baseUrl {
+            return url
+        } else {
+            fatalError("BASE URL NOT FOUND")
         }
     }
     
