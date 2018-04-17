@@ -11,23 +11,29 @@ import UIKit
 
 class BeersListController: UIViewController, ViewCodingProtocol {
     
-    var beersList: [BeerModel] = []
+    var beersList: [BeerModel]
     var dataSourceDelegate: CollectionViewDataSourceDelegate<BeerCollectionViewCell>?
-    var collectionView: UICollectionView = BeersCollectionView()
+    var collectionView: UICollectionView
     var page: Int
-    var refresher: UIRefreshControl = UIRefreshControl()
+    var refresher: UIRefreshControl
     let client: BeerClientProtocol
     let beerFactory: BeerDataSourceFactory
     
     init(client: BeerClientProtocol = BeerClient(),
          page: Int = 1,
-         beerFactory: BeerDataSourceFactory) {
+         beerFactory: BeerDataSourceFactory,
+         beerList: [BeerModel] = [],
+         collectionView: UICollectionView = BeersCollectionView(),
+         refresher: UIRefreshControl = UIRefreshControl()) {
         
         self.client = client
         self.page = page
         self.beerFactory = beerFactory
         self.collectionView = beerFactory.collection
         self.dataSourceDelegate = beerFactory.dataSource()
+        self.beersList = beerList
+        self.collectionView = collectionView
+        self.refresher = refresher
         super.init(nibName: nil, bundle: nil)
     }
     
