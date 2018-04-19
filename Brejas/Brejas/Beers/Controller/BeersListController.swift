@@ -17,20 +17,15 @@ class BeersListController: UIViewController, ViewCodingProtocol {
     var page: Int
     var refresher: UIRefreshControl
     let client: BeerClientProtocol
-    let beerFactory: BeerDataSourceFactory
     
     init(client: BeerClientProtocol = BeerClient(),
          page: Int = 1,
-         beerFactory: BeerDataSourceFactory,
          beerList: [BeerModel] = [],
          collectionView: UICollectionView = BeersCollectionView(),
          refresher: UIRefreshControl = UIRefreshControl()) {
         
         self.client = client
         self.page = page
-        self.beerFactory = beerFactory
-        self.collectionView = beerFactory.collection
-        self.dataSourceDelegate = beerFactory.dataSource()
         self.beersList = beerList
         self.collectionView = collectionView
         self.refresher = refresher
@@ -109,6 +104,17 @@ class BeersListController: UIViewController, ViewCodingProtocol {
     // MARK: - Setup
     
     func setupCollectionView() {
+        
+        self.dataSourceDelegate = CollectionViewDataSourceDelegate<BeerCollectionViewCell> { selectedItem in
+            if let nav = self.navigationController {
+                nav.pushViewController(BeersScreenBuilder.beerDetailController(beer: selectedItem), animated: true)
+            }
+        }
+        
+        self.collectionView.dataSource = dataSourceDelegate
+        self.collectionView.delegate = dataSourceDelegate
+        self.collectionView.register(BeerCollectionViewCell.self, forCellWithReuseIdentifier: BeerCollectionViewCell.cellIdentifier)
+        self.collectionView.reloadData()
 
         self.refresher.addTarget(self, action: #selector(refreshBeers), for: .valueChanged)
         self.collectionView.alwaysBounceVertical = true
